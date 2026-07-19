@@ -628,17 +628,24 @@ def m_mt_ferrule():
 
 def m_bnc_plug():
     fresh()
-    # BNC male cable plug: knurled bayonet sleeve, pin in PTFE, crimp barrel
-    n = 20
-    for i in range(n):
-        a = i / n * 2 * math.pi
-        box(1.2, 11, 1.9, (6.9*math.cos(a), -5.5, 6.9 + 6.9*math.sin(a)), 'M_nickel', rot=(0, a + math.pi/2, 0))
-    cyl(6.7, 11, (0, -5.5, 6.9), 'M_nickel')
-    cyl(4.2, 4, (0, 1, 6.9), 'M_nickel')
-    cyl(3.0, 3.5, (0, 2.2, 6.9), 'P_white')
-    cyl(0.65, 8.5, (0, 2.5, 6.9), 'M_gold')
-    cyl(4.4, 11, (0, -15.5, 6.9), 'M_nickel')
-    boot(3.8, 2.4, 12, -21, 'P_black')
+    # BNC male: smooth bayonet sleeve, J-slots as dark inlays, grip knurl behind
+    R = 6.2
+    cyl(R, 13, (0, -4.5, 6.9), 'M_nickel')                       # one smooth sleeve
+    for zs in (1, -1):                                           # two J-slots
+        z = 6.9 + zs * (R - 0.2)
+        box(1.6, 3.2, 0.7, (0, 0.5, z), 'P_black')               # axial entry
+        box(1.6, 0.7, 0.7, (zs * 1.1, -1.2, z - zs*0.35), 'P_black',
+            rot=(0, math.radians(-30 * zs), 0))                  # J turn
+    cyl(3.1, 4.0, (0, 1.2, 6.9), 'P_white')                      # PTFE
+    cyl(0.65, 8.5, (0, 2.6, 6.9), 'M_gold')                      # pin
+    m = 24
+    for i in range(m):                                           # grip knurl (slimmer)
+        a = i / m * 2 * math.pi
+        box(1.1, 5.5, 1.0, (4.8*math.cos(a), -14.5, 6.9 + 4.8*math.sin(a)),
+            'M_nickel', rot=(0, a + math.pi/2, 0))
+    cyl(4.75, 5.5, (0, -14.5, 6.9), 'M_nickel')
+    cyl(3.9, 7, (0, -20, 6.9), 'M_nickel')
+    boot(3.5, 2.3, 11, -23.5, 'P_black')
     export('p_bnc_plug')
 
 def m_xlr_f():
@@ -655,16 +662,24 @@ def m_xlr_f():
 
 def m_shv_plug():
     fresh()
-    # SHV male cable plug: bayonet sleeve + deep insulator, pin recessed
-    n = 20
-    for i in range(n):
-        a = i / n * 2 * math.pi
-        box(1.3, 13, 2.0, (8.3*math.cos(a), -6.5, 8.3 + 8.3*math.sin(a)), 'M_nickel', rot=(0, a + math.pi/2, 0))
-    cyl(8.1, 13, (0, -6.5, 8.3), 'M_nickel')
-    cyl(4.6, 9, (0, 2.5, 8.3), 'P_white')                        # long safety nose
-    cyl(3.1, 1.5, (0, 7.2, 8.3), 'P_black')                      # recessed contact
-    cyl(5.2, 12, (0, -17.5, 8.3), 'M_nickel')
-    boot(4.6, 2.8, 13, -23.5, 'P_black')
+    # SHV male: smooth bayonet sleeve w/ J-slot inlays, deep recessed insulator
+    R = 9.0
+    cyl(R, 16, (0, -6, 9.2), 'M_nickel')
+    for zs in (1, -1):
+        z = 9.2 + zs * (R - 0.2)
+        box(2.0, 4.0, 0.8, (0, 0.4, z), 'P_black')
+        box(2.0, 0.8, 0.8, (zs * 1.4, -1.8, z - zs*0.45), 'P_black',
+            rot=(0, math.radians(-30 * zs), 0))
+    cyl(5.2, 9, (0, -3.0, 9.2), 'P_white')                       # deep insulator
+    cyl(2.6, 1.5, (0, 1.4, 9.2), 'P_black')                      # recessed contact
+    m = 24
+    for i in range(m):
+        a = i / m * 2 * math.pi
+        box(1.2, 6, 1.1, (6.6*math.cos(a), -18.5, 9.2 + 6.6*math.sin(a)),
+            'M_nickel', rot=(0, a + math.pi/2, 0))
+    cyl(6.5, 6, (0, -18.5, 9.2), 'M_nickel')
+    cyl(5.0, 9, (0, -25.5, 9.2), 'M_nickel')
+    boot(4.5, 2.8, 13, -30, 'P_black')
     export('p_shv_plug')
 
 def m_df57():
