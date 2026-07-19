@@ -1,0 +1,355 @@
+{
+ "banana": {
+  "rz": 0
+ },
+ "barrel": {
+  "rz": 0
+ },
+ "bnc": {
+  "rx": 90,
+  "rz": 0,
+  "el": 15
+ },
+ "db9_m": {
+  "rz": 270,
+  "el": 18
+ },
+ "db9_f": {
+  "rz": 270,
+  "el": 18
+ },
+ "db25_m": {
+  "rz": 270,
+  "el": 18
+ },
+ "db37_m": {
+  "rz": 270,
+  "el": 18
+ },
+ "hd15_f": {
+  "rz": 270,
+  "el": 18
+ },
+ "din41612_f": {
+  "ry": -90,
+  "rz": 0,
+  "el": 30
+ },
+ "din41612_m": {
+  "rz": 180,
+  "el": 30
+ },
+ "dvi": {
+  "rz": 0,
+  "el": 25
+ },
+ "fmc": {
+  "ry": 90,
+  "rz": 0,
+  "el": 35
+ },
+ "hdmi_a": {
+  "rz": 0,
+  "el": 20
+ },
+ "hdmi_micro": {
+  "rz": 0,
+  "el": 20
+ },
+ "idc": {
+  "rz": 0,
+  "el": 22
+ },
+ "ide40": {
+  "ry": 90,
+  "rz": 0,
+  "el": 30
+ },
+ "iec_c14": {
+  "rz": 270,
+  "el": 22
+ },
+ "jack35": {
+  "rz": 0,
+  "el": 15
+ },
+ "lemo": {
+  "rz": 270,
+  "el": 15
+ },
+ "lemo_elbow": {
+  "rz": 270,
+  "el": 18
+ },
+ "mmcx": {
+  "rz": 90,
+  "el": 12
+ },
+ "molex_kk": {
+  "rz": 90,
+  "el": 25
+ },
+ "rj45": {
+  "rz": 0,
+  "el": 25
+ },
+ "sata": {
+  "rz": 0,
+  "el": 30
+ },
+ "sma": {
+  "rz": 0,
+  "el": 18
+ },
+ "sma_edge": {
+  "rx": 90,
+  "rz": 0,
+  "el": 18
+ },
+ "ufl": {
+  "rz": 0,
+  "el": 25
+ },
+ "usb_a": {
+  "rz": 0,
+  "el": 18
+ },
+ "usb_c": {
+  "rz": 0,
+  "el": 12
+ },
+ "usb_micro": {
+  "rz": 0,
+  "el": 18
+ },
+ "usb_mini": {
+  "rz": 0,
+  "el": 18
+ },
+ "v_adamtech_dpc-f-s-ra-smt-bl": {
+  "rz": 0,
+  "el": 20
+ },
+ "v_adamtech_mchdmi-s-ra-1-smt": {
+  "rz": 0,
+  "el": 20
+ },
+ "v_adamtech_qsfp1-dd-emi-hsk-lp-s3": {
+  "rz": 0,
+  "el": 22
+ },
+ "v_adamtech_sfc-1-emi": {
+  "rz": 0,
+  "el": 22
+ },
+ "v_anderson_pp15-45": {
+  "rx": 90,
+  "el": 20
+ },
+ "v_cliff_fcr684205r": {
+  "rz": 0,
+  "el": 18
+ },
+ "v_neutrik_nc3mxx": {
+  "rz": 180,
+  "el": 12
+ },
+ "v_norcomp_111-024-113L001": {
+  "rz": 180,
+  "el": 28
+ },
+ "v_qualtek_744w-00-01": {
+  "rz": 0,
+  "el": 18
+ },
+ "v_samesky_rcj-041": {
+  "rz": 270,
+  "el": 15
+ },
+ "v_wurth_60412042241503": {
+  "rz": 0,
+  "el": 15
+ },
+ "v_wurth_61400416121": {
+  "rz": 0,
+  "el": 18
+ },
+ "v_wurth_615004138421": {
+  "rz": 180,
+  "el": 20
+ },
+ "v_wurth_61611002121501": {
+  "rz": 0,
+  "el": 15
+ },
+ "v_wurth_643150100604": {
+  "rx": 90,
+  "el": 15
+ },
+ "v_wurth_643160100604": {
+  "rx": 90,
+  "el": 15
+ },
+ "v_wurth_67012002221502": {
+  "rz": 0,
+  "el": 15
+ },
+ "v_wurth_649004113322": {
+  "rz": 0,
+  "el": 18
+ },
+ "p_amc_edge": {
+  "el": 40
+ },
+ "p_m2": {
+  "el": 40
+ },
+ "p_atca_zone2": {
+  "el": 25
+ },
+ "p_nim_conn": {
+  "ry": 90,
+  "rz": 180,
+  "el": 25
+ },
+ "p_xlr_m": {
+  "el": 12
+ },
+ "p_shv": {
+  "rz": 160,
+  "el": 15
+ },
+ "p_mhv": {
+  "rz": 160,
+  "el": 15
+ },
+ "p_triax": {
+  "rz": 160,
+  "el": 15
+ },
+ "p_radiall_hv": {
+  "rz": 160,
+  "el": 18
+ },
+ "p_redel": {
+  "rz": 160,
+  "el": 15
+ },
+ "p_firefly": {
+  "el": 30
+ },
+ "p_vtrx": {
+  "el": 35
+ },
+ "p_mt_ferrule": {
+  "el": 30
+ },
+ "p_dac": {
+  "rz": 150,
+  "el": 25
+ },
+ "p_gpib": {
+  "el": 25
+ },
+ "p_uhf": {
+  "el": 12
+ },
+ "p_f_type": {
+  "el": 12
+ },
+ "p_din716": {
+  "el": 12
+ },
+ "p_smp": {
+  "el": 15
+ },
+ "p_df57": {
+  "el": 30
+ },
+ "p_splice": {
+  "el": 20
+ },
+ "p_twinbnc": {
+  "rz": 200,
+  "el": 12
+ },
+ "p_sfp": {
+  "rz": 170,
+  "el": 18
+ },
+ "p_qsfp": {
+  "rz": 170,
+  "el": 18
+ },
+ "p_usb3_micro": {
+  "el": 20
+ },
+ "p_powerpole": {
+  "rz": 160,
+  "el": 18
+ },
+ "p_lc": {
+  "el": 15
+ },
+ "p_lc_duplex": {
+  "el": 15
+ },
+ "p_sc": {
+  "el": 15
+ },
+ "p_st": {
+  "el": 15
+ },
+ "p_fc": {
+  "el": 15
+ },
+ "p_mu": {
+  "el": 15
+ },
+ "p_e2000": {
+  "el": 15
+ },
+ "p_mtp": {
+  "el": 15
+ },
+ "p_mtp_f": {
+  "el": 15
+ },
+ "p_mtp_apc": {
+  "el": 15
+ },
+ "p_sas": {
+  "el": 18
+ },
+ "p_minisas_hd": {
+  "el": 18
+ },
+ "p_matenlok": {
+  "el": 18
+ },
+ "p_microfit": {
+  "el": 18
+ },
+ "p_minifit": {
+  "el": 18
+ },
+ "p_firewire6": {
+  "el": 15
+ },
+ "p_firewire9": {
+  "el": 15
+ },
+ "p_usb3_b": {
+  "el": 15
+ },
+ "p_rj11": {
+  "el": 18
+ },
+ "p_rca": {
+  "rz": 90,
+  "el": 12
+ },
+ "p_toslink": {
+  "el": 15
+ }
+}
