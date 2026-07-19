@@ -304,7 +304,7 @@ def card(c):
     if dkq:
         links += f'<a href="{dk(dkq)}" target="_blank" rel="noopener">digikey</a>'
     return f'''      <figure class="card{' wide' if wide else ''}">
-        <div class="art"><img src="{art(slug)}" alt="{esc(name)} connector" loading="lazy"></div>
+        <div class="art"><img src="{art(slug)}" alt="{esc(name)} connector"></div>
         <div class="nm"><span class="cn">{esc(name)}{subh}</span>{mf}</div>
         <p class="desc">{desc}</p>
         <div class="meta"><span class="tag"><span class="d"></span>{esc(tag)}</span>
@@ -321,12 +321,12 @@ def section(i, title, note, medium, cards):
   </section>'''
 
 CSS = r'''
-@font-face{font-family:"Archivo";src:url("%(A8)s") format("woff2");font-weight:800;font-display:swap}
-@font-face{font-family:"Archivo";src:url("%(A6)s") format("woff2");font-weight:600;font-display:swap}
-@font-face{font-family:"Plex Sans";src:url("%(S4)s") format("woff2");font-weight:400;font-display:swap}
-@font-face{font-family:"Plex Sans";src:url("%(S6)s") format("woff2");font-weight:600;font-display:swap}
-@font-face{font-family:"Plex Mono";src:url("%(M4)s") format("woff2");font-weight:400;font-display:swap}
-@font-face{font-family:"Plex Mono";src:url("%(M6)s") format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:"Archivo";src:url("@@A8@@") format("woff2");font-weight:800;font-display:swap}
+@font-face{font-family:"Archivo";src:url("@@A6@@") format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:"Plex Sans";src:url("@@S4@@") format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Plex Sans";src:url("@@S6@@") format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:"Plex Mono";src:url("@@M4@@") format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Plex Mono";src:url("@@M6@@") format("woff2");font-weight:600;font-display:swap}
 
 :root{
   --paper:#e9ebe4; --panel:#f5f6f1; --panel2:#eef0e9;
@@ -448,9 +448,11 @@ def build():
     sects = '\n'.join(section(i+1, *s) for i, s in enumerate(SECTIONS))
     also = '\n'.join(f'      <span><b>{esc(n)}</b> — {esc(d)}</span>' for n, d in ALSO)
     exp = '\n'.join(f'          <div class="tip"><b>{esc(n)}</b><span>{esc(d)}</span></div>' for n, d in EXP_NOTES)
-    css = CSS % {'A8': font('archivo-800.woff2'), 'A6': font('archivo-600.woff2'),
-                 'S4': font('plexsans-400.woff2'), 'S6': font('plexsans-600.woff2'),
-                 'M4': font('plexmono-400.woff2'), 'M6': font('plexmono-600.woff2')}
+    css = CSS
+    for k, f in [('A8','archivo-800.woff2'), ('A6','archivo-600.woff2'),
+                 ('S4','plexsans-400.woff2'), ('S6','plexsans-600.woff2'),
+                 ('M4','plexmono-400.woff2'), ('M6','plexmono-600.woff2')]:
+        css = css.replace('@@'+k+'@@', font(f))
     n_ref = len(SECTIONS) + 1
     return f'''<title>Connectors of the Particle Physics Lab — A Bench & Rack Field Guide</title>
 <style>{css}</style>
