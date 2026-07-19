@@ -1,0 +1,135 @@
+{
+  "rj11_jack": {
+    "file": "wurth_615004138421.stp",
+    "part": "Wurth Elektronik 615004138421 (WR-MJ 6P4C modular jack)",
+    "source": "https://www.we-online.com/components/products/download/615004138421%20(rev1).stp",
+    "page": "https://www.we-online.com/en/components/products/?sq=615004138421"
+  },
+  "usb_b": {
+    "file": "wurth_61400416121.stp",
+    "part": "Wurth Elektronik 61400416121 (WR-COM USB 2.0 Type B receptacle)",
+    "source": "https://www.we-online.com/components/products/download/61400416121%20(rev1).stp",
+    "page": "https://www.we-online.com/en/components/products/?sq=61400416121"
+  },
+  "xlr_male": {
+    "file": "neutrik_nc3mxx.stp",
+    "part": "Neutrik NC3MXX (3-pole male XLR cable connector)",
+    "source": "https://www.neutrik.com/media/13485/download/NC3MXX.stp?v=4",
+    "page": "https://www.neutrik.com/en/product/nc3mxx"
+  },
+  "rca_jack": {
+    "file": "samesky_rcj-041.step",
+    "part": "Same Sky (formerly CUI Devices) RCJ-041 (RCA/phono jack, black, right angle)",
+    "source": "https://3dcadfiles.3dexchange.net/step_ap214/205/7827259/Same_Sky_RCJ-041.zip",
+    "page": "https://www.sameskydevices.com/product/interconnect/connectors/rca-connectors/rcj-041"
+  },
+  "toslink_receptacle": {
+    "file": "cliff_fcr684205r.stp",
+    "part": "CLIFF Electronics FCR684205R (TOSLINK optical receiver jack)",
+    "source": "https://www.cliffuk.co.uk/products/optical/FCR684205R.stp",
+    "page": "https://www.cliffuk.co.uk/products/optical/opticaljacks.htm"
+  },
+  "n_jack": {
+    "file": "wurth_60412042241503.stp",
+    "part": "Wurth Elektronik 60412042241503 (WR-NTYPE N-type straight PCB jack)",
+    "source": "https://www.we-online.com/components/products/download/60412042241503%20(rev1).stp",
+    "page": "https://www.we-online.com/en/components/products/em/connectors/coax/coax_n_type_connectors"
+  },
+  "tnc_jack": {
+    "file": "wurth_67012002221502.stp",
+    "part": "Wurth Elektronik 67012002221502 (WR-TNC TNC straight PCB jack)",
+    "source": "https://www.we-online.com/components/products/download/67012002221502%20(rev1).stp",
+    "page": "https://www.we-online.com/en/components/products/em/connectors/coax/coaxial_tnc_connectors"
+  },
+  "smb_jack": {
+    "file": "wurth_61611002121501.stp",
+    "part": "Wurth Elektronik 61611002121501 (WR-SMB SMB PCB jack, THT)",
+    "source": "https://www.we-online.com/components/products/download/61611002121501%20(rev1).stp",
+    "page": "https://www.we-online.com/en/components/products/em/connectors/coax/coax_smb_connectors"
+  },
+  "shv": {
+    "file": "accuglass_112441_shv5.stp",
+    "part": "Accu-Glass Products SHV5-GS4-K50 (4x SHV-5 grounded-shield coax feedthrough, NW50 KF flange; drawing 112441)",
+    "source": "https://api.swarm.accuglassproducts.com/sites/default/files/download/step/112441.zip",
+    "page": "https://www.accuglassproducts.com/shv5-gs4-k50"
+  },
+  "mhv": {
+    "file": "accuglass_110177_mhv.stp",
+    "part": "Accu-Glass Products MHV-FS-K40 (MHV floating-shield coax feedthrough, NW40 KF flange; drawing 110177)",
+    "source": "https://api.swarm.accuglassproducts.com/sites/default/files/models/step/110177_2.zip",
+    "page": "https://www.accuglassproducts.com/coaxial/mhv-coaxial/floating-iso-feedthroughs/mhv-fs-k40"
+  },
+  "sfp_cage": {
+    "file": "adamtech_sfc-1-emi.step",
+    "part": "Adam Tech SFC-1-EMI (single-port SFP cage with EMI springs)",
+    "source": "https://app.adam-tech.com/products/download/model/193010/sfc-1-emi-model.step",
+    "page": "https://app.adam-tech.com/products/index/category:3087"
+  },
+  "qsfp_cage": {
+    "file": "adamtech_qsfp1-dd-emi-hsk-lp-s3.step",
+    "part": "Adam Tech QSFP1-DD-EMI-HSK-LP-S3 (QSFP-DD 1x1 cage with EMI fingers, heatsink, light pipe)",
+    "source": "https://app.adam-tech.com/products/download/model/244310/qsfp1-dd-emi-hsk-lp-s3-model.step",
+    "page": "https://app.adam-tech.com/products/index/category:3088"
+  },
+  "iec_c20_inlet": {
+    "file": "qualtek_744w-00-01.step",
+    "part": "Qualtek 744W-00/01 (IEC 60320 C20 screw-mount AC power inlet)",
+    "source": "https://qualtekusa.com/wp-content/uploads/3d/744w0001.STEP",
+    "page": "https://www.qualtekusa.com/product/744w-00-01/"
+  },
+  "gpib_centronics24": {
+    "file": "norcomp_111-024-113L001.step",
+    "part": "NorComp 111-024-113L001 (111 series 24-position micro-ribbon / IEEE-488 style, male, PCB dip solder)",
+    "source": "https://content.norcomp.net/3d-drawings/step/111Series/111-024-113L001.STEP.zip",
+    "page": "https://www.norcomp.net/series/111-series"
+  },
+  "anderson_powerpole": {
+    "file": "anderson_pp15-45.stp",
+    "part": "Anderson Power Products PP15-45 Powerpole housing (1327 family)",
+    "source": "https://p1.aprimocdn.net/idealindustries/049139ff-693d-4b33-82ec-b3f00073ea2b/ap-web_product-assets_default_step-files_PP-15-45-Std-02-08-STEP_Original%20file.zip",
+    "page": "https://www.andersonpower.com/us/en/category/product.html/powerpoler-15-45-standard-housings-black.html"
+  },
+  "m12_male": {
+    "file": "wurth_643150100604.stp",
+    "part": "Wurth Elektronik 643150100604 (WR-CIRC M12 screw-mating panel, male, metal shell, 4-pin)",
+    "source": "https://www.we-online.com/components/products/download/643150100604%20(rev1).stp",
+    "page": "https://www.we-online.com/en/components/products/CIRCULAR-CONNECTORS-M12-MALE-METAL-SHELL"
+  },
+  "m12_female": {
+    "file": "wurth_643160100604.stp",
+    "part": "Wurth Elektronik 643160100604 (WR-CIRC M12 screw-mating panel, female, metal shell, 4-pin)",
+    "source": "https://www.we-online.com/components/products/download/643160100604%20(rev1).stp",
+    "page": "https://www.we-online.com/en/components/products/WR-CIRCM12-SCREW-MATING-PANEL-FEMALE-METAL"
+  },
+  "displayport": {
+    "file": "adamtech_dpc-f-s-ra-smt-bl.step",
+    "part": "Adam Tech DPC-F-S-RA-SMT-BL (DisplayPort receptacle, right-angle SMT)",
+    "source": "https://app.adam-tech.com/products/download/model/203587/dpc-f-s-ra-smt-bl-model.step",
+    "page": "https://app.adam-tech.com/products/index/category:3101"
+  },
+  "hdmi_mini": {
+    "file": "adamtech_mchdmi-s-ra-1-smt.step",
+    "part": "Adam Tech MCHDMI-S-RA-1-SMT (HDMI Mini Type C receptacle, right-angle SMT)",
+    "source": "https://app.adam-tech.com/products/download/model/203663/mchdmi-s-ra-1-smt-model.step",
+    "page": "https://app.adam-tech.com/products/index/category:3103"
+  },
+  "fiber_lc_duplex": {
+    "file": "neutrik_no2-4fdw-a.stp",
+    "part": "Neutrik NO2-4FDW-A (opticalCON DUO chassis connector with LC-duplex feedthrough)",
+    "source": "https://www.neutrik.com/media/12624/download/3D%20Ansicht%20NO2-4FDW-A.stp?v=2",
+    "page": "https://www.neutrik.com/en/product/no2-4fdw-a"
+  },
+  "minifit_jr_equiv": {
+    "file": "wurth_649004113322.stp",
+    "part": "Wurth Elektronik 649004113322 (WR-MPC4 4.20 mm dual-row female receptacle housing; Molex Mini-Fit Jr equivalent)",
+    "source": "https://www.we-online.com/components/products/download/649004113322%20(rev1).stp",
+    "page": "https://www.we-online.com/en/components/products/WTB_WR_MPC4_DUAL_RECETACLE_PLUG_DUAL_ROW"
+  },
+  "misses": [
+    "triax: no login-free manufacturer STEP found. Trompeter/Cinch (Bel Fuse) CAD library is a SnapMagic embed (banned portal); Pomona triax adapters offer only PDF datasheets (their 3D models live on 3DContentCentral, banned); LEMO/Fischer CAD requires CADENAS PARTcommunity registration; Accu-Glass carries triax cable but no triax connector STEP.",
+    "minisas_hd_oculink: not obtained. Molex part-detail pages ('not formally published') expose no CAD; TE.com and Amphenol-CS block automated access (403) and TE DocumentDelivery CVM guess returned 500; Amphenol RF/CS 3D models are behind the MyARF login; no alternative vendor with direct STEP found.",
+    "note_amphenolrf: Amphenol RF (N/TNC/SMB originally requested from them) gates all 3D models behind MyARF account login (asset URLs 403 + redirect to login); items 6-8 were fulfilled from Wurth Elektronik instead.",
+    "note_schurter: Schurter IEC C20 CAD is served via an embedded CADENAS iframe (registration-gated); item 14 fulfilled from Qualtek instead.",
+    "note_molex_minifit: Molex 'Download 3D Model' unavailable without login for 39281043/0039012040; item 21 fulfilled with the equivalent Wurth WR-MPC4 4.2 mm housing."
+  ]
+}
