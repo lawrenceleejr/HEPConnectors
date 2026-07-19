@@ -626,6 +626,47 @@ def m_mt_ferrule():
         box(5.2, 2.2, 0.4, (0, -8.8 - t * 14, 1.6 + math.sin(t * 2.6) * 1.2), 'P_aqua')
     export('p_mt_ferrule')
 
+def m_bnc_plug():
+    fresh()
+    # BNC male cable plug: knurled bayonet sleeve, pin in PTFE, crimp barrel
+    n = 20
+    for i in range(n):
+        a = i / n * 2 * math.pi
+        box(1.2, 11, 1.9, (6.9*math.cos(a), -5.5, 6.9 + 6.9*math.sin(a)), 'M_nickel', rot=(0, a + math.pi/2, 0))
+    cyl(6.7, 11, (0, -5.5, 6.9), 'M_nickel')
+    cyl(4.2, 4, (0, 1, 6.9), 'M_nickel')
+    cyl(3.0, 3.5, (0, 2.2, 6.9), 'P_white')
+    cyl(0.65, 8.5, (0, 2.5, 6.9), 'M_gold')
+    cyl(4.4, 11, (0, -15.5, 6.9), 'M_nickel')
+    boot(3.8, 2.4, 12, -21, 'P_black')
+    export('p_bnc_plug')
+
+def m_xlr_f():
+    fresh()
+    # XLR female inline: shell with 3-socket face + latch
+    cyl(9.6, 16, (0, -8, 9.6), 'M_nickel')
+    cyl(8.4, 1.6, (0, 0.4, 9.6), 'P_dark')
+    for (dx, dz) in [(0, 3.4), (-3.0, -1.8), (3.0, -1.8)]:
+        cyl(1.15, 1.2, (dx, 0.9, 9.6 + dz), 'P_black')           # sockets read as holes
+    box(3.2, 8, 1.6, (0, -4, 19.0), 'M_nickel')                  # latch
+    cyl(9.9, 12, (0, -20, 9.6), 'P_black')
+    boot(5.0, 2.6, 14, -26, 'P_black')
+    export('p_xlr_f')
+
+def m_shv_plug():
+    fresh()
+    # SHV male cable plug: bayonet sleeve + deep insulator, pin recessed
+    n = 20
+    for i in range(n):
+        a = i / n * 2 * math.pi
+        box(1.3, 13, 2.0, (8.3*math.cos(a), -6.5, 8.3 + 8.3*math.sin(a)), 'M_nickel', rot=(0, a + math.pi/2, 0))
+    cyl(8.1, 13, (0, -6.5, 8.3), 'M_nickel')
+    cyl(4.6, 9, (0, 2.5, 8.3), 'P_white')                        # long safety nose
+    cyl(3.1, 1.5, (0, 7.2, 8.3), 'P_black')                      # recessed contact
+    cyl(5.2, 12, (0, -17.5, 8.3), 'M_nickel')
+    boot(4.6, 2.8, 13, -23.5, 'P_black')
+    export('p_shv_plug')
+
 def m_df57():
     fresh()
     # Hirose DF57 2-pos micro crimp pair (CMS 2S module LV/HV entry)
@@ -661,6 +702,7 @@ ALL = [m_lc, m_lc_duplex, m_sc, m_st, m_fc, m_mtp, m_mu, m_e2000,
        m_smp, m_f_type, m_uhf, m_din716,
        m_mtp_f, m_mtp_apc, m_firefly,
        m_vtrx, m_radiall_hv, m_redel, m_mt_ferrule, m_df57,
+       m_bnc_plug, m_xlr_f, m_shv_plug,
        m_sfp, m_qsfp, m_shv, m_mhv, m_triax,
        m_toslink, m_rca, m_xlr_m, m_rj11, m_gpib, m_minifit,
        m_displayport, m_hdmi_mini, m_powerpole, m_dac]
