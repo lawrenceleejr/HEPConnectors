@@ -173,6 +173,12 @@ SECTIONS = [
   ('pinheader', '0.1″ header', 'Molex KK', 'MF',
    'Friction pin headers & crimp housings — fans, jumpers, debug UARTs, GPIO.',
    'pins · crimp', W+'Pin_header', '2.54mm pin header', 0),
+  ('dip', 'DIP switch', '', 'genderless',
+   'Bank of tiny slide switches — board-level config: addresses, bus termination, boot modes.',
+   'config · slide', W+'DIP_switch', 'DIP switch', 0),
+  ('button', 'Tactile switch', '6 mm', 'genderless',
+   'The clicky momentary PCB button — resets, manual triggers & front-panel pokes.',
+   'momentary · THT', W+'Push-button', 'tactile switch 6mm', 0),
  ]),
  ('Storage & Drives', 'event builders & disk arrays', 'cu', [
   ('sata', 'SATA', '', 'MF',

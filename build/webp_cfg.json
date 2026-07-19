@@ -171,5 +171,7 @@
  "powerpole": "v_anderson_pp15-45",
  "firefly": "p_firefly",
  "vtrx": "p_vtrx",
- "df57": "p_df57"
+ "df57": "p_df57",
+ "dip": "p_dip",
+ "button": "p_button"
 }
