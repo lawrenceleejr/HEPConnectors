@@ -6,7 +6,8 @@ SRC = pathlib.Path(sys.argv[1])   # renders dir
 OUT = pathlib.Path(sys.argv[2]); OUT.mkdir(exist_ok=True)
 
 def trim(im, pad=14):
-    bbox = im.getchannel('A').getbbox()
+    hard = im.getchannel('A').point(lambda a: 255 if a > 80 else 0)
+    bbox = hard.getbbox()
     if not bbox: return im
     l, t, r, b = bbox
     return im.crop((max(0, l-pad), max(0, t-pad), min(im.width, r+pad), min(im.height, b+pad)))

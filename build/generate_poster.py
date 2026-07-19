@@ -17,7 +17,7 @@ def dk(q): return 'https://www.digikey.com/en/search?keywords=' + q.replace(' ',
 SECTIONS = [
  ('RF & Coaxial — signals, pulses & timing', '50 Ω unless noted', 'cu', [
   ('bnc', 'BNC', '', 'MF',
-   'Quarter-turn bayonet lock. The workhorse for scope leads and NIM/detector pulses.',
+   'Quarter-turn bayonet lock. The workhorse for scope leads and NIM/detector pulses. Plug & jack shown.',
    '50/75 Ω · bayonet', W+'BNC_connector', 'BNC connector', 0),
   ('sma', 'SMA', '', 'MF',
    'Screw-thread microwave connector to ~18 GHz. Clocks, RF and timing distribution.',
@@ -58,7 +58,7 @@ SECTIONS = [
  ]),
  ('High Voltage & Multipin', 'label your HV', 'cu', [
   ('shv', 'SHV', '', 'MF',
-   'Safe high voltage to ~5 kV — PMT, SiPM & wire-chamber bias. Deep insulator keeps live pins unreachable.',
+   'Safe high voltage to ~5 kV — PMT, SiPM & wire-chamber bias. Deep insulator keeps live contacts unreachable. Plug & jack shown.',
    'HV · 5 kV', W+'SHV_connector', 'SHV connector', 0),
   ('mhv', 'MHV', '', 'MF',
    'Older ~3 kV HV that looks like BNC — and half-mates with it. Being retired in favour of SHV.',
@@ -156,14 +156,14 @@ SECTIONS = [
    'RS-232 serial — consoles, HV crates, motion controllers, ELMB CANbus. Male & female shown.',
    'RS-232 · CAN', W+'D-subminiature', 'DB9 connector', 1),
   ('db25', 'DB25', '', 'MF',
-   'Wide D-sub — legacy serial, parallel (LPT) and some GPIB break-outs.',
-   'parallel / serial', W+'D-subminiature', 'DB25 connector', 0),
+   'Wide D-sub — legacy serial, parallel (LPT) and some GPIB break-outs. Male & female shown.',
+   'parallel / serial', W+'D-subminiature', 'DB25 connector', 1),
   ('db37', 'DB37', 'DC-37', 'MF',
-   'Fat D-sub — MARATON LV front panels, ELMB breakouts & multichannel analogue I/O.',
-   'LV · analogue I/O', W+'D-subminiature', 'DB37 connector', 0),
+   'Fat D-sub — MARATON LV front panels, ELMB breakouts & multichannel analogue I/O. Male & female shown.',
+   'LV · analogue I/O', W+'D-subminiature', 'DB37 connector', 1),
   ('hd15', 'HD-15', 'VGA', 'MF',
-   '15-pin, three rows — analogue RGBHV video to projectors & old crate displays.',
-   'analogue video', W+'VGA_connector', 'VGA connector', 0),
+   '15-pin, three rows — analogue RGBHV video to projectors & old crate displays. Male & female shown.',
+   'analogue video', W+'VGA_connector', 'VGA connector', 1),
   ('gpib', 'GPIB', 'IEEE-488', 'MF',
    'Stackable 24-pin micro-ribbon — the classic bench-instrument bus for automated measurement.',
    'instrument bus', W+'IEEE-488', 'GPIB connector', 0),
@@ -213,7 +213,7 @@ SECTIONS = [
    'Square optical S/PDIF — galvanically isolated, ground-loop-free digital audio.',
    'optical S/PDIF', W+'TOSLINK', 'TOSLINK connector', 0),
   ('xlr', 'XLR', '', 'MF',
-   'Locking 3-pin balanced audio — long, low-noise runs & PA in the control room.',
+   'Locking 3-pin balanced audio — long, low-noise runs & PA in the control room. Male & female shown.',
    'balanced · locking', W+'XLR_connector', 'XLR connector', 0),
   ('banana', 'Banana', '4 mm', 'MF',
    'Spring-sprung 4 mm plug — DMMs, bench PSUs & test-point patching.',
@@ -464,8 +464,8 @@ def build():
       <p class="eyebrow">Bench &amp; Rack Field Guide · Rev. 2026</p>
       <h1>Connectors of the<br>Particle&nbsp;Physics&nbsp;Lab <span class="thin">— what plugs into what</span></h1>
       <p class="sub">The coax, fibre, network, backplane, data, video and power interconnects of the crate,
-        the rack and the counting room — rendered from CAD models of the real parts. Male / female shown
-        where the gender differs; colour marks the signal medium.</p>
+        the rack and the counting room — rendered from CAD models of the real parts. M/F badges mark gendered connectors; paired
+        art shows male on the left, female on the right. Colour marks the signal medium.</p>
     </div>
     <div class="masthead-key">
       <div class="keyrow"><span>copper / electrical</span><span class="dot cu"></span></div>
