@@ -11,7 +11,7 @@ WEBP = HERE / 'webp'
 FONTS = HERE / 'fonts'
 
 W = 'https://en.wikipedia.org/wiki/'
-def dk(q): return 'https://www.digikey.com/en/search?keywords=' + q.replace(' ', '%20')
+def dk(q): return 'https://www.digikey.com/en/products/result?keywords=' + q.replace(' ', '%20')
 
 # card: (slug, name, sub, gender('MF'|''|label), desc, tag, ref_url, dk_query_or_None, wide?)
 SECTIONS = [
@@ -78,7 +78,7 @@ SECTIONS = [
    'Small-form latching ferrule — the default face of SFP/SFP+ transceivers.',
    '1.25 mm ferrule', W+'Optical_fiber_connector', 'LC fiber connector', 0),
   ('lclc', 'LC-LC duplex', '', '',
-   'Clipped LC pair — one fibre transmits, one receives. Standard datacom patch.',
+   'Clipped LC pair — one fibre transmits, one receives. The clip usually pulls apart into two simplex plugs (one-piece uniboot types don\u2019t).',
    'Tx + Rx pair', W+'Optical_fiber_connector', 'LC duplex cable', 0),
   ('sc', 'SC', '', '',
    'Square push-pull, 2.5 mm ferrule. Rugged datacom & passive-optical trunks.',
