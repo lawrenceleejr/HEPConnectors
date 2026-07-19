@@ -454,7 +454,9 @@ def build():
                  ('M4','plexmono-400.woff2'), ('M6','plexmono-600.woff2')]:
         css = css.replace('@@'+k+'@@', font(f))
     n_ref = len(SECTIONS) + 1
-    return f'''<title>Connectors of the Particle Physics Lab — A Bench & Rack Field Guide</title>
+    return f'''<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Connectors of the Particle Physics Lab — A Bench & Rack Field Guide</title>
 <style>{css}</style>
 <div class="poster">
   <header class="mast">
