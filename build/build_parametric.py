@@ -709,7 +709,39 @@ def m_firefly():
     box(2.6, 4, 1.4, ( 6.9, -4, 5.0), 'M_steel')
     export('p_firefly')
 
-ALL = [m_lc, m_lc_duplex, m_sc, m_st, m_fc, m_mtp, m_mu, m_e2000,
+
+def m_dip():
+    fresh()
+    # DIP-8 slide switch bank: red body, white actuators, gull legs
+    box(20, 10, 5.5, (0, -5, 2.75), 'P_red')
+    for i in range(8):
+        x = -7.7 + i * 2.2
+        box(1.3, 3.2, 0.9, (x, -3.2, 5.8), 'P_white')            # slide slot bed
+        box(1.3, 1.5, 1.5, (x, -2.5, 6.1), 'P_white')            # actuator nub
+    for i in range(8):
+        x = -7.7 + i * 2.2
+        box(0.9, 2.2, 0.5, (x, 0.6, 0.6), 'M_nickel')            # legs near
+        box(0.9, 2.2, 0.5, (x, -10.6, 0.6), 'M_nickel')          # legs far
+    box(2.2, 2.2, 0.4, (-8.9, -5, 5.55), 'P_white')              # pin-1 dot
+    export('p_dip')
+
+def m_button():
+    fresh()
+    # 6 mm THT tactile switch + one with a red cap
+    def tact(x, cap=None):
+        box(6.2, 6.2, 3.6, (x, -3.1, 1.8), 'P_black')
+        box(6.4, 6.4, 0.8, (x, -3.1, 3.6), 'M_steel')            # metal top plate
+        cyl(1.75, 1.6, (x, -3.1, 4.6), 'P_black', axis='Z')      # plunger
+        if cap:
+            cyl(3.4, 2.4, (x, -3.1, 5.4), cap, axis='Z')         # round cap
+        for dx in (-2.25, 2.25):
+            for dy in (-6.2, 0):
+                box(0.7, 0.4, 3.2, (x + dx, dy - 0.0 - 3.1 + (3.1 if dy==0 else -0.0), -1.2), 'M_nickel')
+    tact(-6.5)
+    tact(6.5, 'P_red')
+    export('p_button')
+
+ALL = [m_dip, m_button, m_lc, m_lc_duplex, m_sc, m_st, m_fc, m_mtp, m_mu, m_e2000,
        m_splice, m_twinbnc,
        m_usb3_b, m_usb3_micro, m_firewire6, m_firewire9,
        m_sas, m_minisas_hd, m_m2, m_matenlok,
