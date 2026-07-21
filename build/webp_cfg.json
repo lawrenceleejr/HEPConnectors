@@ -3,37 +3,37 @@
   "names": [
    "v_radiall_bnc_plug",
    "bnc"
-  ],
-  "gap": 40,
-  "heights": [
-   1,
-   1
   ]
  },
  "sma": "sma",
  "smb": "v_wurth_61611002121501",
  "mcx": "mmcx",
- "n": "v_wurth_60412042241503",
- "tnc": "v_wurth_67012002221502",
+ "n": {
+  "names": [
+   "v_radiall_n_plug",
+   "v_wurth_60412042241503"
+  ]
+ },
+ "tnc": {
+  "names": [
+   "v_radiall_tnc_plug",
+   "v_wurth_67012002221502"
+  ]
+ },
  "lemo": "lemo",
- "smp": "p_smp",
- "f_type": "p_f_type",
+ "smp": "v_radiall_smp",
+ "f_type": "v_bkl_f_plug",
  "uhf": "p_uhf",
- "din716": "p_din716",
+ "din716": "v_radiall_716_plug",
  "twinbnc": "p_twinbnc",
  "ufl": "ufl",
  "shv": {
   "names": [
-   "p_shv_plug",
-   "p_shv"
-  ],
-  "gap": 40,
-  "heights": [
-   1,
-   1
+   "v_radiall_shv_plug",
+   "v_radiall_shv_jack"
   ]
  },
- "mhv": "p_mhv",
+ "mhv": "v_radiall_mhv_plug",
  "triax": "p_triax",
  "radiall": "p_radiall_hv",
  "redel": "p_redel",
@@ -41,7 +41,7 @@
  "lclc": "p_lc_duplex",
  "sc": "p_sc",
  "st": "p_st",
- "fc": "p_fc",
+ "fc": "v_cliff_fc",
  "e2000": "p_e2000",
  "mu": "p_mu",
  "mtpfam": {
@@ -49,13 +49,22 @@
    "p_mtp",
    "p_mtp_f",
    "p_mtp_apc"
-  ],
-  "gap": 30
+  ]
  },
  "mt_ferrule": "p_mt_ferrule",
  "splice": "p_splice",
- "rj45": "rj45",
- "rj11": "v_wurth_615004138421",
+ "rj45": {
+  "names": [
+   "v_adamtech_rj45_plug",
+   "rj45_h"
+  ]
+ },
+ "rj11": {
+  "names": [
+   "v_adamtech_rj11_plug",
+   "v_wurth_615004138421"
+  ]
+ },
  "sfp": "v_adamtech_sfc-1-emi",
  "qsfp": "v_adamtech_qsfp1-dd-emi-hsk-lp-s3",
  "dac": "p_dac",
@@ -63,71 +72,53 @@
   "names": [
    "v_wurth_643150100604",
    "v_wurth_643160100604"
-  ],
-  "gap": 30
+  ]
  },
  "din41612": {
   "names": [
    "din41612_m",
    "din41612_f"
-  ],
-  "gap": 34
+  ]
  },
  "nim_conn": "p_nim_conn",
  "atca_zone2": "p_atca_zone2",
  "amc_edge": "p_amc_edge",
  "fmc": "fmc",
- "usbfam": {
-  "names": [
-   "usb_a",
-   "v_wurth_61400416121",
-   "usb_mini",
-   "usb_micro",
-   "usb_c"
-  ],
-  "gap": 26
- },
  "usb3fam": {
   "names": [
    "p_usb3_b",
    "p_usb3_micro"
-  ],
-  "gap": 40
+  ]
  },
  "firewire": {
   "names": [
    "p_firewire6",
    "p_firewire9"
-  ],
-  "gap": 30
+  ]
  },
  "db9": {
   "names": [
    "db9_m",
    "db9_f"
-  ],
-  "gap": 34
+  ]
  },
  "db25": {
   "names": [
    "db25_m",
    "db25_f"
-  ],
-  "gap": 34
+  ]
  },
  "db37": {
   "names": [
    "db37_m",
    "db37_f"
-  ],
-  "gap": 34
+  ]
  },
  "hd15": {
   "names": [
    "hd15_m",
    "hd15_f"
-  ],
-  "gap": 34
+  ]
  },
  "gpib": "v_norcomp_111-024-113L001",
  "idc": "idc",
@@ -142,8 +133,7 @@
    "hdmi_a",
    "v_adamtech_mchdmi-s-ra-1-smt",
    "hdmi_micro"
-  ],
-  "gap": 26
+  ]
  },
  "dp": "v_adamtech_dpc-f-s-ra-smt-bl",
  "dvi": "dvi",
@@ -154,11 +144,6 @@
   "names": [
    "v_neutrik_nc3mxx",
    "p_xlr_f"
-  ],
-  "gap": 40,
-  "heights": [
-   1,
-   1
   ]
  },
  "banana": "banana",
@@ -173,5 +158,10 @@
  "vtrx": "p_vtrx",
  "df57": "p_df57",
  "dip": "p_dip",
- "button": "p_button"
+ "button": "p_button",
+ "usb_a": "usb_a_h",
+ "usb_b": "v_wurth_61400416121",
+ "usb_mini": "usb_mini",
+ "usb_micro": "usb_micro",
+ "usbc": "usb_c_h"
 }

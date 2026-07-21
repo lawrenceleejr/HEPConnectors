@@ -4,7 +4,7 @@
 Reads fonts/*.woff2 and webp/<art>.webp, emits a single HTML file with
 everything inlined. Usage: python3 generate_poster.py <out.html>
 """
-import base64, pathlib, sys, html
+import base64, pathlib, sys, html, json
 
 HERE = pathlib.Path(__file__).parent
 WEBP = HERE / 'webp'
@@ -29,10 +29,10 @@ SECTIONS = [
    'Micro snap coax. Board-edge and on-detector RF where space is scarce.',
    '50 Ω · micro', W+'MCX_connector', 'MMCX connector', 0),
   ('n', 'N-type', '', 'MF',
-   'Rugged weatherproof RF to ~11 GHz. Antennas, high-power feeds, long runs.',
+   'Rugged weatherproof RF to ~11 GHz. Antennas, high-power feeds, long runs. Plug & jack shown.',
    '50/75 Ω · threaded', W+'N_connector', 'N type connector', 0),
   ('tnc', 'TNC', '', 'MF',
-   'Threaded BNC. Same size, but the screw coupling shrugs off vibration.',
+   'Threaded BNC. Same size, but the screw coupling shrugs off vibration. Plug & jack shown.',
    '50 Ω · threaded', W+'TNC_connector', 'TNC connector', 0),
   ('lemo', 'LEMO 00', '0S', 'MF',
    'Push-pull self-latching, keyed. The HEP staple — PMTs, front-end & fast NIM timing.',
@@ -87,7 +87,7 @@ SECTIONS = [
    'Bayonet twist-lock, keyed. Legacy multimode links — and ATLAS’s TTC timing fan-out.',
    'bayonet · TTC', W+'Optical_fiber_connector', 'ST fiber connector', 0),
   ('fc', 'FC', '', '',
-   'Metal screw coupling, keyed. Single-mode, metrology & high-vibration mounts.',
+   'Metal screw coupling, keyed. Single-mode, metrology & high-vibration mounts. Panel feedthrough shown.',
    'threaded · SM', W+'Optical_fiber_connector', 'FC fiber connector', 0),
   ('e2000', 'E-2000 / LSH', '', '',
    'Push-pull with a spring-loaded laser-safety shutter. The single-mode staple of CERN’s fibre plant.',
@@ -107,10 +107,10 @@ SECTIONS = [
  ]),
  ('Network & Pluggable Transceivers — DAQ & slow control', 'copper ↔ optical', 'hy', [
   ('rj45', 'RJ45', '8P8C', 'MF',
-   'Twisted-pair Ethernet — slow-control, DAQ networks and IPMI everywhere.',
+   'Twisted-pair Ethernet — slow-control, DAQ networks and IPMI everywhere. Plug & jack shown.',
    'Ethernet · latch', W+'Modular_connector', 'RJ45 connector', 0),
   ('rj11', 'RJ11', '6P4C', 'MF',
-   'Smaller modular jack — telephone, and the odd RS-232-over-RJ console port.',
+   'Smaller modular plug & jack — telephone, and the odd RS-232-over-RJ console port.',
    'legacy · latch', W+'Registered_jack', 'RJ11 connector', 0),
   ('sfp', 'SFP / SFP+', '', 'MF',
    'Hot-plug transceiver cage — 1 to 10/25 G. Swap between copper, DAC or LC optics.',
@@ -143,9 +143,21 @@ SECTIONS = [
    'mezzanine · 400 pin', W+'FPGA_Mezzanine_Card', 'FMC connector VITA 57', 0),
  ]),
  ('Data, Serial & Instrumentation Buses', 'the back of every rack', 'cu', [
-  ('usbfam', 'USB family', 'A · B · Mini-B · Micro-B · C', '',
-   'Left to right: A, B, Mini-B, Micro-B, C. Blue insert = 3.x SuperSpeed; C is reversible power + data. Peripherals, scopes, front-panels.',
-   'A / B / mini / µ / C', W+'USB_hardware', 'USB connector', 1),
+  ('usb_a', 'USB-A', '', 'MF',
+   'The host-side rectangle — one-way only. Peripherals, dongles & front panels.',
+   'host · 4-pin+', W+'USB_hardware', 'USB A connector', 0),
+  ('usb_b', 'USB-B', '', 'MF',
+   'The square device-side uplink — scopes, instruments & anything bench-sized.',
+   'device · square', W+'USB_hardware', 'USB B connector', 0),
+  ('usb_mini', 'USB Mini-B', '', 'MF',
+   'Early-2000s portable port — still on older scopes, cameras & dev kits.',
+   'legacy · 5-pin', W+'USB_hardware', 'USB mini B connector', 0),
+  ('usb_micro', 'USB Micro-B', '', 'MF',
+   'The phone-era micro port — SBCs, dev boards & battery gadgets.',
+   'micro · 5-pin', W+'USB_hardware', 'USB micro B connector', 0),
+  ('usbc', 'USB-C', '', 'MF',
+   'Reversible power + data up to 240 W / 40 Gb/s — and Thunderbolt in disguise.',
+   'reversible · PD', W+'USB-C', 'USB C connector', 0),
   ('usb3fam', 'USB 3.0 B & Micro-B', 'SuperSpeed', '',
    'The odd ones: 3.0 Type-B grows a hump, 3.0 Micro-B grows a sidecar. Scopes, DAQ boxes, external disks.',
    '5 Gb/s · wide', W+'USB_3.0', 'USB 3.0 connector', 1),
@@ -288,6 +300,8 @@ def b64(p, mime):
 
 def font(name): return b64(FONTS / name, 'font/woff2')
 
+CARDMM = json.loads(pathlib.Path('cardmm.json').read_text()) if pathlib.Path('cardmm.json').exists() else {}
+
 def art(slug):
     p = WEBP / f'{slug}.webp'
     if not p.exists():
@@ -305,6 +319,9 @@ def card(c):
     else:
         mf = ''
     subh = f' <small>{esc(sub)}</small>' if sub else ''
+    mm = CARDMM.get(slug)
+    if mm:
+        tag = f"{tag} · {mm:.0f} mm" if mm >= 10 else f"{tag} · {mm:.1f} mm"
     reflabel = 'wiki' if ref.startswith(W) else 'spec'
     links = f'<a href="{ref}" target="_blank" rel="noopener">{reflabel}</a>'
     if dkq:
@@ -471,7 +488,7 @@ def build():
       <h1>Connectors of the<br>Particle&nbsp;Physics&nbsp;Lab <span class="thin">— what plugs into what</span></h1>
       <p class="sub">The coax, fibre, network, backplane, data, video and power interconnects of the crate,
         the rack and the counting room — rendered from CAD models of the real parts. M/F badges mark gendered connectors; paired
-        art shows male on the left, female on the right. Colour marks the signal medium.</p>
+        art shows male on the left, female on the right. Colour marks the signal medium; within a section, connectors are drawn to relative scale — true sizes on the tags; the tiniest parts are enlarged a touch to stay visible.</p>
     </div>
     <div class="masthead-key">
       <div class="keyrow"><span>copper / electrical</span><span class="dot cu"></span></div>

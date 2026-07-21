@@ -130,6 +130,81 @@
     "minisas_hd_oculink: not obtained. Molex part-detail pages ('not formally published') expose no CAD; TE.com and Amphenol-CS block automated access (403) and TE DocumentDelivery CVM guess returned 500; Amphenol RF/CS 3D models are behind the MyARF login; no alternative vendor with direct STEP found.",
     "note_amphenolrf: Amphenol RF (N/TNC/SMB originally requested from them) gates all 3D models behind MyARF account login (asset URLs 403 + redirect to login); items 6-8 were fulfilled from Wurth Elektronik instead.",
     "note_schurter: Schurter IEC C20 CAD is served via an embedded CADENAS iframe (registration-gated); item 14 fulfilled from Qualtek instead.",
-    "note_molex_minifit: Molex 'Download 3D Model' unavailable without login for 39281043/0039012040; item 21 fulfilled with the equivalent Wurth WR-MPC4 4.2 mm housing."
-  ]
+    "note_molex_minifit: Molex 'Download 3D Model' unavailable without login for 39281043/0039012040; item 21 fulfilled with the equivalent Wurth WR-MPC4 4.2 mm housing.",
+    "uhf_pl259: no login-free STEP found. Radiall makes UHF (R155.003/005.000) but publishes no CAD for the series (S3 has only the datasheet PDF); Telegaertner (J01040 series), TME, Keystone, Farnell/CPC, L-com, Pasternack and Amphenol RF all block automated access (403) or gate CAD behind login; Adam Tech UHF (RF9-01-D-01-50) has datasheet only, no 3D model.",
+    "triax_update_2026-07: still no login-free STEP. Radiall BNC-TRX R266 parts (R266.010/260/403.000) have no STEP on the radiall-files S3 bucket; Intelliconnect triax (TRB/TRT, e.g. 0131-P1NN-417-100N) product pages offer PDF datasheets only; Trompeter/Cinch and Pomona remain banned portals; LEMO/Fischer gated.",
+    "ieee1394_firewire_6pin: not obtained. EDAC 693 series delisted from edac.net (obsolete); Molex host unreachable; Keystone (keyelco.com) and L-com block automated access; Assmann A-IEE-DIP 3D link redirects to TraceParts (banned); Adam Tech has no 1394 line; Kycon site has broken TLS chain and no confirmed 1394 series."
+  ],
+  "bnc_male_plug": {
+    "file": "radiall_R141082161_BNC_male_straight_crimp_plug.step",
+    "part": "Radiall R141.082.161 (BNC straight male plug, crimp type, 50 ohm, RG58/cable 5)",
+    "source": "https://radiall-files.s3.amazonaws.com/step/coaxialconnectors/R141.082.161F.STEP",
+    "page": "https://www.radiall.com/bnc-straight-plug-crimp-type-cable-5-50-s-r141082161.html"
+  },
+  "n_male_plug": {
+    "file": "radiall_R161082000_N_male_straight_crimp_plug.step",
+    "part": "Radiall R161.082.000 (N straight plug, full crimp type, cable 5/50 S, 50 ohm)",
+    "source": "https://radiall-files.s3.amazonaws.com/step/coaxialconnectors/R161.082.000F.STEP",
+    "page": "https://www.radiall.com/n-straight-plug-full-crimp-type-cable-5-50-s-r161082000.html"
+  },
+  "tnc_male_plug": {
+    "file": "radiall_R143082161_TNC_male_straight_crimp_plug.step",
+    "part": "Radiall R143.082.161 (TNC straight plug, crimp type, cable 5/50 S, 50 ohm)",
+    "source": "https://radiall-files.s3.amazonaws.com/step/coaxialconnectors/R143.082.161D.STEP",
+    "page": "https://www.radiall.com/tnc-straight-plug-crimp-type-cable-5-50-s-r143082161.html"
+  },
+  "din716_male_plug": {
+    "file": "radiall_R185077000_716_DIN_male_straight_crimp_plug.step",
+    "part": "Radiall R185.077.000 (7/16 DIN straight male plug, crimp type, cable 11/50 D)",
+    "source": "https://radiall-files.s3.amazonaws.com/step/coaxialconnectors/R185.077.000E.STEP",
+    "page": "https://www.radiall.com/7-16-straight-plug-crimp-type-cable-11-50-d.html"
+  },
+  "smp_male": {
+    "file": "radiall_R222426020_SMP_male_straight_receptacle_full_detent.step",
+    "part": "Radiall R222.426.020 (SMP straight male receptacle, solder legs, full detent, board mount)",
+    "source": "https://radiall-files.s3.amazonaws.com/step/coaxialconnectors/R222.426.020B.STEP",
+    "page": "https://www.radiall.com/smp-straight-male-receptacle-solder-legs-full-detent-r222426020.html"
+  },
+  "mhv_plug": {
+    "file": "radiall_R316011000_MHV_BNC-HT_male_straight_clamp_plug.step",
+    "part": "Radiall R316.011.000 (BNC HT-MHV straight plug, clamp type, cable 6/75 - MHV high-voltage cable plug, single connector)",
+    "source": "https://radiall-files.s3.amazonaws.com/step/coaxialconnectors/R316.011.000V.STEP",
+    "page": "https://www.radiall.com/bnc-ht-mhv-straight-plug-clamp-type-cable-6-75-r316011000.html"
+  },
+  "shv_cable_plug": {
+    "file": "radiall_R317072000_SHV_cable_plug_crimp.step",
+    "part": "Radiall R317.072.000 (SHV straight cable plug, crimp type, cable 5/50S; single connector)",
+    "source": "https://radiall-files.s3.amazonaws.com/step/coaxialconnectors/R317.072.000%20J.STEP",
+    "page": "https://www.radiall.com/shv-straight-female-crimp-type-cable-5-50s-r317072000.html"
+  },
+  "shv_panel_jack": {
+    "file": "radiall_R317405000_SHV_panel_jack_square_flange.step",
+    "part": "Radiall R317.405.000 (SHV straight male square-flange panel receptacle/jack)",
+    "source": "https://radiall-files.s3.amazonaws.com/step/coaxialconnectors/R317.405.000.STEP",
+    "page": "https://www.radiall.com/shv-straight-male-square-flange-receptacle-r317405000.html"
+  },
+  "rj45_male_plug": {
+    "file": "adamtech_mtp-88_RJ45_8P8C_male_plug.step",
+    "part": "Adam Tech MTP-88 (8P8C RJ45 modular cable plug, male)",
+    "source": "https://app.adam-tech.com/products/download/model/195302/mtp-88-model.step",
+    "page": "https://app.adam-tech.com/products/index/category:3095"
+  },
+  "rj11_male_plug": {
+    "file": "adamtech_mtp-64-x_RJ11_6P4C_male_plug.step",
+    "part": "Adam Tech MTP-64-X (6P4C RJ11 modular cable plug, male)",
+    "source": "https://app.adam-tech.com/products/download/model/195305/mtp-64-x-model.step",
+    "page": "https://app.adam-tech.com/products/index/category:3095"
+  },
+  "fc_fiber": {
+    "file": "cliff_cp30219m_FC_feedthrough_coupler.stp",
+    "part": "CLIFF Electronics CP30219M (FC fibre-optic feedthrough coupler/adapter in XLR shell, FC/PC & FC/APC)",
+    "source": "https://www.cliffuk.co.uk/products/feedthrough/metal/CP30219M.stp",
+    "page": "https://www.cliffuk.co.uk/products/feedthrough/metal/index.htm"
+  },
+  "f_type_male_plug": {
+    "file": "bkl_0403319_F_type_male_twist_on_plug.step",
+    "part": "BKL Electronic 0403319 (F-type twist-on male plug for 7.5 mm cable)",
+    "source": "https://static.bkl-electronic.de/3d-step/0403319-3d.step",
+    "page": "https://www.bkl-electronic.de/en/product/0403319"
+  }
 }

@@ -385,20 +385,30 @@ def m_usb3_micro():
 # ================= FireWire =================
 def m_firewire6():
     fresh()
-    # IEEE 1394a 6-pin plug: rectangular shell w/ one chamfered end
-    box(11.2, 11, 6.2, (0, -5.5, 3.1), 'M_nickel')
-    box(9.4, 2.6, 4.6, (0, 0.3, 2.9), 'P_black')
-    box(8.0, 11.2, 2.2, (0, -5.5, 7.0), 'M_nickel', rot=(0, 0, 0))   # top taper hint
-    box(12.6, 13, 8.6, (0, -13.5, 4.3), 'P_dark')
-    boot(3.8, 2.2, 11, -20, 'P_dark')
+    # IEEE 1394a 6-pin plug: rectangular shell with the tapered "bullet" top
+    box(11.2, 12, 4.4, (0, -6, 2.2), 'M_nickel')                 # lower shell
+    box(7.4, 12, 2.0, (0, -6, 5.4), 'M_nickel')                  # tapered top (narrow)
+    box(2.6, 12, 2.2, (-4.2, -6, 4.6), 'M_nickel', rot=(0, math.radians(40), 0))
+    box(2.6, 12, 2.2, ( 4.2, -6, 4.6), 'M_nickel', rot=(0, math.radians(-40), 0))
+    box(9.4, 1.6, 3.0, (0, 0.2, 2.6), 'P_black')                 # insert in mouth
+    for i in range(6):
+        x = -3.1 + i * 1.24
+        box(0.6, 1.2, 1.6, (x, 0.6, 2.8), 'M_gold')              # 6 contacts
+    box(12.6, 12, 7.6, (0, -14.5, 3.4), 'P_dark')                # overmold
+    boot(3.8, 2.2, 11, -21, 'P_dark')
     export('p_firewire6')
 
 def m_firewire9():
     fresh()
-    box(11.2, 10, 7.0, (0, -5, 3.5), 'M_nickel')
-    box(9.4, 2.4, 5.2, (0, 0.2, 3.5), 'P_black')
-    box(12.6, 12, 9.2, (0, -12.5, 4.6), 'P_black')
-    boot(3.8, 2.2, 10, -18.5, 'P_black')
+    # 1394b 9-pin: squarer shell, no taper, 9 contacts in two rows
+    box(10.6, 11, 6.6, (0, -5.5, 3.3), 'M_nickel')
+    box(8.8, 1.6, 4.8, (0, 0.2, 3.3), 'P_black')
+    for i in range(5):
+        box(0.55, 1.2, 1.4, (-3.2 + i*1.6, 0.6, 4.2), 'M_gold')
+    for i in range(4):
+        box(0.55, 1.2, 1.4, (-2.4 + i*1.6, 0.6, 2.4), 'M_gold')
+    box(12.0, 11, 8.8, (0, -13.5, 4.0), 'P_black')
+    boot(3.6, 2.2, 10, -19.5, 'P_black')
     export('p_firewire9')
 
 # ================= drives =================
@@ -741,7 +751,21 @@ def m_button():
     tact(6.5, 'P_red')
     export('p_button')
 
-ALL = [m_dip, m_button, m_lc, m_lc_duplex, m_sc, m_st, m_fc, m_mtp, m_mu, m_e2000,
+
+def m_rj45_plug():
+    fresh()
+    # 8P8C modular cable plug: body, 8 gold blades at top of face, latch below
+    box(11.7, 20, 8.1, (0, -10, 4.05), 'P_ivory')
+    box(10.5, 2.0, 6.9, (0, 0.2, 4.05), 'P_ivory')
+    for i in range(8):
+        x = -3.57 + i * 1.02
+        box(0.55, 2.6, 2.6, (x, 0.4, 6.4), 'M_gold')             # contact blades
+    box(4.6, 12, 1.5, (0, -9, -0.9), 'P_ivory', rot=(math.radians(7), 0, 0))  # latch
+    box(6.2, 6, 5.2, (0, -22.5, 4.05), 'P_ivory')
+    boot(3.4, 2.2, 10, -25, 'P_dark')
+    export('p_rj45_plug')
+
+ALL = [m_rj45_plug, m_dip, m_button, m_lc, m_lc_duplex, m_sc, m_st, m_fc, m_mtp, m_mu, m_e2000,
        m_splice, m_twinbnc,
        m_usb3_b, m_usb3_micro, m_firewire6, m_firewire9,
        m_sas, m_minisas_hd, m_m2, m_matenlok,
