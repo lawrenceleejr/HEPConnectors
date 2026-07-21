@@ -126,6 +126,7 @@ TINT = {
   'v_anderson_pp15-45': {'force': (0.48, 0.05, 0.045, 0.0, 0.45)},
   'v_qualtek_744w-00-01': {'force': (0.05, 0.05, 0.055, 0.0, 0.45)},
   'v_wurth_649004113322': {'force': (0.82, 0.79, 0.70, 0.0, 0.5)},
+  'v_radiall_bnc_plug': {'white': NICKEL},
 }
 
 def apply_tint(name):
@@ -148,6 +149,10 @@ def frame_and_render(name, glb, out_png):
     objs = [o for o in set(bpy.data.objects) - before if o.type == 'MESH']
     if not objs:
         print('NO MESH', name); return False
+    for o in objs:                      # STEP w/o colors -> GLB w/o materials
+        if not o.data.materials:
+            am = bpy.data.materials.new('auto'); am.use_nodes = True
+            o.data.materials.append(am)
     material_pass()
     apply_tint(name)
 
