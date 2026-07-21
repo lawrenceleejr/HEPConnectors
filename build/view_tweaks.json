@@ -12,24 +12,24 @@
   "el": 15
  },
  "db9_m": {
-  "rz": 270,
-  "el": 18
+  "rz": 150,
+  "el": 15
  },
  "db9_f": {
-  "rz": 270,
-  "el": 18
+  "rz": 150,
+  "el": 15
  },
  "db25_m": {
-  "rz": 270,
-  "el": 18
+  "rz": 150,
+  "el": 15
  },
  "db37_m": {
-  "rz": 270,
-  "el": 18
+  "rz": 150,
+  "el": 15
  },
  "hd15_f": {
-  "rz": 270,
-  "el": 18
+  "rz": 150,
+  "el": 15
  },
  "din41612_f": {
   "ry": -90,
@@ -37,8 +37,9 @@
   "el": 30
  },
  "din41612_m": {
+  "rx": 90,
   "rz": 180,
-  "el": 30
+  "el": 18
  },
  "dvi": {
   "rz": 0,
@@ -50,12 +51,12 @@
   "el": 35
  },
  "hdmi_a": {
-  "rz": 180,
-  "el": 18
+  "rz": 150,
+  "el": 12
  },
  "hdmi_micro": {
-  "rz": 330,
-  "el": 15
+  "rz": 150,
+  "el": 12
  },
  "idc": {
   "rz": 0,
@@ -97,7 +98,7 @@
  },
  "sata": {
   "rz": 180,
-  "el": 28
+  "el": 38
  },
  "sma": {
   "rz": 0,
@@ -123,12 +124,12 @@
   "el": 12
  },
  "usb_micro": {
-  "rz": 330,
-  "el": 15
+  "rz": 150,
+  "el": 12
  },
  "usb_mini": {
-  "rz": 300,
-  "el": 18
+  "rz": 330,
+  "el": 12
  },
  "v_adamtech_dpc-f-s-ra-smt-bl": {
   "rz": 330,
@@ -136,11 +137,12 @@
  },
  "v_adamtech_mchdmi-s-ra-1-smt": {
   "rz": 300,
-  "el": 20
+  "ry": 180,
+  "el": 15
  },
  "v_adamtech_qsfp1-dd-emi-hsk-lp-s3": {
-  "rz": 60,
-  "el": 15
+  "rz": 330,
+  "el": 12
  },
  "v_adamtech_sfc-1-emi": {
   "rz": 60,
@@ -160,7 +162,8 @@
  },
  "v_norcomp_111-024-113L001": {
   "rz": 180,
-  "el": 28
+  "rx": -20,
+  "el": 15
  },
  "v_qualtek_744w-00-01": {
   "rz": 0,
@@ -179,8 +182,8 @@
   "el": 15
  },
  "v_wurth_615004138421": {
-  "rz": 140,
-  "el": 15
+  "rz": 150,
+  "el": 12
  },
  "v_wurth_61611002121501": {
   "rz": 240,
@@ -344,15 +347,18 @@
   "el": 18
  },
  "p_firewire6": {
+  "rz": 200,
   "el": 15
  },
  "p_firewire9": {
+  "rz": 200,
   "el": 15
  },
  "p_usb3_b": {
   "el": 15
  },
  "p_rj11": {
+  "rz": 200,
   "el": 18
  },
  "p_rca": {
@@ -363,16 +369,16 @@
   "el": 15
  },
  "db25_f": {
-  "rz": 270,
-  "el": 18
+  "rz": 150,
+  "el": 15
  },
  "db37_f": {
-  "rz": 270,
-  "el": 18
+  "rz": 150,
+  "el": 15
  },
  "hd15_m": {
-  "rz": 270,
-  "el": 18
+  "rz": 150,
+  "el": 15
  },
  "p_bnc_plug": {
   "rz": 165,
@@ -398,6 +404,74 @@
  },
  "v_radiall_bnc_plug": {
   "rz": 160,
+  "el": 15
+ },
+ "rj45_h": {
+  "rx": -90,
+  "rz": 345,
+  "el": 12
+ },
+ "usb_a_h": {
+  "rx": -90,
+  "rz": 345,
+  "el": 15
+ },
+ "usb_c_h": {
+  "rx": -90,
+  "rz": 345,
+  "el": 12
+ },
+ "p_rj45_plug": {
+  "rz": 200,
+  "el": 18
+ },
+ "v_radiall_smp": {
+  "rz": 345,
+  "el": 15
+ },
+ "v_radiall_716_plug": {
+  "rz": 90,
+  "el": 15
+ },
+ "v_radiall_mhv_plug": {
+  "rz": 90,
+  "el": 15
+ },
+ "v_radiall_n_plug": {
+  "rz": 180,
+  "el": 15
+ },
+ "v_radiall_tnc_plug": {
+  "rz": 175,
+  "el": 15
+ },
+ "v_radiall_shv_jack": {
+  "rz": 175,
+  "el": 18
+ },
+ "v_radiall_shv_plug": {
+  "rz": 175,
+  "el": 15
+ },
+ "v_adamtech_rj11_plug": {
+  "rz": 270,
+  "el": 18
+ },
+ "v_adamtech_rj45_plug": {
+  "rz": 265,
+  "el": 18
+ },
+ "v_neutrik_lc_duplex": {
+  "rz": 270,
+  "el": 15
+ },
+ "v_bkl_f_plug": {
+  "rz": 90,
+  "el": 15
+ },
+ "v_cliff_fc": {
+  "rx": 90,
+  "rz": 180,
   "el": 15
  }
 }

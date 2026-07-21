@@ -127,6 +127,18 @@ TINT = {
   'v_qualtek_744w-00-01': {'force': (0.05, 0.05, 0.055, 0.0, 0.45)},
   'v_wurth_649004113322': {'force': (0.82, 0.79, 0.70, 0.0, 0.5)},
   'v_radiall_bnc_plug': {'white': NICKEL},
+  'v_radiall_tnc_plug': {'white': NICKEL},
+  'v_radiall_n_plug': {'white': NICKEL},
+  'v_radiall_716_plug': {'white': NICKEL},
+  'v_radiall_smp': {'white': NICKEL},
+  'v_radiall_mhv_plug': {'white': NICKEL},
+  'v_radiall_shv_plug': {'white': NICKEL},
+  'v_radiall_shv_jack': {'white': NICKEL},
+  'v_adamtech_rj11_plug': {'force': (0.80, 0.78, 0.72, 0.0, 0.25)},
+  'v_adamtech_rj45_plug': {'force': (0.80, 0.78, 0.72, 0.0, 0.25)},
+  'v_neutrik_lc_duplex': {'force': (0.06, 0.06, 0.065, 0.0, 0.4)},
+  'v_bkl_f_plug': {'white': NICKEL},
+  'v_cliff_fc': {'white': NICKEL},
 }
 
 def apply_tint(name):
