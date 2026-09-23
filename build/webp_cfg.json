@@ -5,9 +5,13 @@
    "bnc"
   ]
  },
- "sma": "sma",
+ "sma": {
+  "names": [
+   "v_radiall_sma_plug",
+   "v_radiall_sma_jack"
+  ]
+ },
  "smb": "v_wurth_61611002121501",
- "mcx": "mmcx",
  "n": {
   "names": [
    "v_radiall_n_plug",
@@ -22,7 +26,7 @@
  },
  "lemo": "lemo",
  "smp": "v_radiall_smp",
- "f_type": "v_bkl_f_plug",
+ "f_type": "p_f_type",
  "uhf": "p_uhf",
  "din716": "v_radiall_716_plug",
  "twinbnc": "p_twinbnc",
@@ -65,8 +69,18 @@
    "v_wurth_615004138421"
   ]
  },
- "sfp": "v_adamtech_sfc-1-emi",
- "qsfp": "v_adamtech_qsfp1-dd-emi-hsk-lp-s3",
+ "sfp": {
+  "names": [
+   "p_sfp",
+   "v_adamtech_sfc-1-emi"
+  ]
+ },
+ "qsfp": {
+  "names": [
+   "p_qsfp",
+   "v_adamtech_qsfp1-dd-emi-hsk-lp-s3"
+  ]
+ },
  "dac": "p_dac",
  "m12": {
   "names": [
@@ -137,8 +151,18 @@
  },
  "dp": "v_adamtech_dpc-f-s-ra-smt-bl",
  "dvi": "dvi",
- "rca": "v_samesky_rcj-041",
- "jack": "jack35",
+ "rca": {
+  "names": [
+   "p_rca",
+   "v_samesky_rcj-041"
+  ]
+ },
+ "jack": {
+  "names": [
+   "p_jack35_plug",
+   "jack35"
+  ]
+ },
  "toslink": "v_cliff_fcr684205r",
  "xlr": {
   "names": [
@@ -159,9 +183,24 @@
  "df57": "p_df57",
  "dip": "p_dip",
  "button": "p_button",
- "usb_a": "usb_a_h",
+ "usb_a": {
+  "names": [
+   "v_adamtech_usba3_plug",
+   "usb_a_h"
+  ]
+ },
  "usb_b": "v_wurth_61400416121",
- "usb_mini": "usb_mini",
+ "usb_mini": {
+  "names": [
+   "v_qualtek_usbmini_plug",
+   "usb_mini"
+  ]
+ },
  "usb_micro": "usb_micro",
- "usbc": "usb_c_h"
+ "usbc": {
+  "names": [
+   "v_adamtech_usbc_plug",
+   "usb_c_h"
+  ]
+ }
 }

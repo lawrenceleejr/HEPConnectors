@@ -15,7 +15,7 @@ cfg = json.load(open(sys.argv[3]))
 MM = json.load(open('model_mm.json'))
 
 SECTION = {
- 1: ['bnc','sma','smb','mcx','n','tnc','lemo','smp','f_type','uhf','din716','twinbnc','ufl'],
+ 1: ['bnc','sma','smb','n','tnc','lemo','smp','f_type','uhf','din716','twinbnc','ufl'],
  2: ['shv','mhv','triax','radiall','redel'],
  3: ['lc','lclc','sc','st','fc','e2000','mu','mtpfam','mt_ferrule','splice'],
  4: ['rj45','rj11','sfp','qsfp','dac','m12'],

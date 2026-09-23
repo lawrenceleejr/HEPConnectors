@@ -1,210 +1,259 @@
 {
-  "rj11_jack": {
-    "file": "wurth_615004138421.stp",
-    "part": "Wurth Elektronik 615004138421 (WR-MJ 6P4C modular jack)",
-    "source": "https://www.we-online.com/components/products/download/615004138421%20(rev1).stp",
-    "page": "https://www.we-online.com/en/components/products/?sq=615004138421"
-  },
-  "usb_b": {
-    "file": "wurth_61400416121.stp",
-    "part": "Wurth Elektronik 61400416121 (WR-COM USB 2.0 Type B receptacle)",
-    "source": "https://www.we-online.com/components/products/download/61400416121%20(rev1).stp",
-    "page": "https://www.we-online.com/en/components/products/?sq=61400416121"
-  },
-  "xlr_male": {
-    "file": "neutrik_nc3mxx.stp",
-    "part": "Neutrik NC3MXX (3-pole male XLR cable connector)",
-    "source": "https://www.neutrik.com/media/13485/download/NC3MXX.stp?v=4",
-    "page": "https://www.neutrik.com/en/product/nc3mxx"
-  },
-  "rca_jack": {
-    "file": "samesky_rcj-041.step",
-    "part": "Same Sky (formerly CUI Devices) RCJ-041 (RCA/phono jack, black, right angle)",
-    "source": "https://3dcadfiles.3dexchange.net/step_ap214/205/7827259/Same_Sky_RCJ-041.zip",
-    "page": "https://www.sameskydevices.com/product/interconnect/connectors/rca-connectors/rcj-041"
-  },
-  "toslink_receptacle": {
-    "file": "cliff_fcr684205r.stp",
-    "part": "CLIFF Electronics FCR684205R (TOSLINK optical receiver jack)",
-    "source": "https://www.cliffuk.co.uk/products/optical/FCR684205R.stp",
-    "page": "https://www.cliffuk.co.uk/products/optical/opticaljacks.htm"
-  },
-  "n_jack": {
-    "file": "wurth_60412042241503.stp",
-    "part": "Wurth Elektronik 60412042241503 (WR-NTYPE N-type straight PCB jack)",
-    "source": "https://www.we-online.com/components/products/download/60412042241503%20(rev1).stp",
-    "page": "https://www.we-online.com/en/components/products/em/connectors/coax/coax_n_type_connectors"
-  },
-  "tnc_jack": {
-    "file": "wurth_67012002221502.stp",
-    "part": "Wurth Elektronik 67012002221502 (WR-TNC TNC straight PCB jack)",
-    "source": "https://www.we-online.com/components/products/download/67012002221502%20(rev1).stp",
-    "page": "https://www.we-online.com/en/components/products/em/connectors/coax/coaxial_tnc_connectors"
-  },
-  "smb_jack": {
-    "file": "wurth_61611002121501.stp",
-    "part": "Wurth Elektronik 61611002121501 (WR-SMB SMB PCB jack, THT)",
-    "source": "https://www.we-online.com/components/products/download/61611002121501%20(rev1).stp",
-    "page": "https://www.we-online.com/en/components/products/em/connectors/coax/coax_smb_connectors"
-  },
-  "shv": {
-    "file": "accuglass_112441_shv5.stp",
-    "part": "Accu-Glass Products SHV5-GS4-K50 (4x SHV-5 grounded-shield coax feedthrough, NW50 KF flange; drawing 112441)",
-    "source": "https://api.swarm.accuglassproducts.com/sites/default/files/download/step/112441.zip",
-    "page": "https://www.accuglassproducts.com/shv5-gs4-k50"
-  },
-  "mhv": {
-    "file": "accuglass_110177_mhv.stp",
-    "part": "Accu-Glass Products MHV-FS-K40 (MHV floating-shield coax feedthrough, NW40 KF flange; drawing 110177)",
-    "source": "https://api.swarm.accuglassproducts.com/sites/default/files/models/step/110177_2.zip",
-    "page": "https://www.accuglassproducts.com/coaxial/mhv-coaxial/floating-iso-feedthroughs/mhv-fs-k40"
-  },
-  "sfp_cage": {
-    "file": "adamtech_sfc-1-emi.step",
-    "part": "Adam Tech SFC-1-EMI (single-port SFP cage with EMI springs)",
-    "source": "https://app.adam-tech.com/products/download/model/193010/sfc-1-emi-model.step",
-    "page": "https://app.adam-tech.com/products/index/category:3087"
-  },
-  "qsfp_cage": {
-    "file": "adamtech_qsfp1-dd-emi-hsk-lp-s3.step",
-    "part": "Adam Tech QSFP1-DD-EMI-HSK-LP-S3 (QSFP-DD 1x1 cage with EMI fingers, heatsink, light pipe)",
-    "source": "https://app.adam-tech.com/products/download/model/244310/qsfp1-dd-emi-hsk-lp-s3-model.step",
-    "page": "https://app.adam-tech.com/products/index/category:3088"
-  },
-  "iec_c20_inlet": {
-    "file": "qualtek_744w-00-01.step",
-    "part": "Qualtek 744W-00/01 (IEC 60320 C20 screw-mount AC power inlet)",
-    "source": "https://qualtekusa.com/wp-content/uploads/3d/744w0001.STEP",
-    "page": "https://www.qualtekusa.com/product/744w-00-01/"
-  },
-  "gpib_centronics24": {
-    "file": "norcomp_111-024-113L001.step",
-    "part": "NorComp 111-024-113L001 (111 series 24-position micro-ribbon / IEEE-488 style, male, PCB dip solder)",
-    "source": "https://content.norcomp.net/3d-drawings/step/111Series/111-024-113L001.STEP.zip",
-    "page": "https://www.norcomp.net/series/111-series"
-  },
-  "anderson_powerpole": {
-    "file": "anderson_pp15-45.stp",
-    "part": "Anderson Power Products PP15-45 Powerpole housing (1327 family)",
-    "source": "https://p1.aprimocdn.net/idealindustries/049139ff-693d-4b33-82ec-b3f00073ea2b/ap-web_product-assets_default_step-files_PP-15-45-Std-02-08-STEP_Original%20file.zip",
-    "page": "https://www.andersonpower.com/us/en/category/product.html/powerpoler-15-45-standard-housings-black.html"
-  },
-  "m12_male": {
-    "file": "wurth_643150100604.stp",
-    "part": "Wurth Elektronik 643150100604 (WR-CIRC M12 screw-mating panel, male, metal shell, 4-pin)",
-    "source": "https://www.we-online.com/components/products/download/643150100604%20(rev1).stp",
-    "page": "https://www.we-online.com/en/components/products/CIRCULAR-CONNECTORS-M12-MALE-METAL-SHELL"
-  },
-  "m12_female": {
-    "file": "wurth_643160100604.stp",
-    "part": "Wurth Elektronik 643160100604 (WR-CIRC M12 screw-mating panel, female, metal shell, 4-pin)",
-    "source": "https://www.we-online.com/components/products/download/643160100604%20(rev1).stp",
-    "page": "https://www.we-online.com/en/components/products/WR-CIRCM12-SCREW-MATING-PANEL-FEMALE-METAL"
-  },
-  "displayport": {
-    "file": "adamtech_dpc-f-s-ra-smt-bl.step",
-    "part": "Adam Tech DPC-F-S-RA-SMT-BL (DisplayPort receptacle, right-angle SMT)",
-    "source": "https://app.adam-tech.com/products/download/model/203587/dpc-f-s-ra-smt-bl-model.step",
-    "page": "https://app.adam-tech.com/products/index/category:3101"
-  },
-  "hdmi_mini": {
-    "file": "adamtech_mchdmi-s-ra-1-smt.step",
-    "part": "Adam Tech MCHDMI-S-RA-1-SMT (HDMI Mini Type C receptacle, right-angle SMT)",
-    "source": "https://app.adam-tech.com/products/download/model/203663/mchdmi-s-ra-1-smt-model.step",
-    "page": "https://app.adam-tech.com/products/index/category:3103"
-  },
-  "fiber_lc_duplex": {
-    "file": "neutrik_no2-4fdw-a.stp",
-    "part": "Neutrik NO2-4FDW-A (opticalCON DUO chassis connector with LC-duplex feedthrough)",
-    "source": "https://www.neutrik.com/media/12624/download/3D%20Ansicht%20NO2-4FDW-A.stp?v=2",
-    "page": "https://www.neutrik.com/en/product/no2-4fdw-a"
-  },
-  "minifit_jr_equiv": {
-    "file": "wurth_649004113322.stp",
-    "part": "Wurth Elektronik 649004113322 (WR-MPC4 4.20 mm dual-row female receptacle housing; Molex Mini-Fit Jr equivalent)",
-    "source": "https://www.we-online.com/components/products/download/649004113322%20(rev1).stp",
-    "page": "https://www.we-online.com/en/components/products/WTB_WR_MPC4_DUAL_RECETACLE_PLUG_DUAL_ROW"
-  },
-  "misses": [
-    "triax: no login-free manufacturer STEP found. Trompeter/Cinch (Bel Fuse) CAD library is a SnapMagic embed (banned portal); Pomona triax adapters offer only PDF datasheets (their 3D models live on 3DContentCentral, banned); LEMO/Fischer CAD requires CADENAS PARTcommunity registration; Accu-Glass carries triax cable but no triax connector STEP.",
-    "minisas_hd_oculink: not obtained. Molex part-detail pages ('not formally published') expose no CAD; TE.com and Amphenol-CS block automated access (403) and TE DocumentDelivery CVM guess returned 500; Amphenol RF/CS 3D models are behind the MyARF login; no alternative vendor with direct STEP found.",
-    "note_amphenolrf: Amphenol RF (N/TNC/SMB originally requested from them) gates all 3D models behind MyARF account login (asset URLs 403 + redirect to login); items 6-8 were fulfilled from Wurth Elektronik instead.",
-    "note_schurter: Schurter IEC C20 CAD is served via an embedded CADENAS iframe (registration-gated); item 14 fulfilled from Qualtek instead.",
-    "note_molex_minifit: Molex 'Download 3D Model' unavailable without login for 39281043/0039012040; item 21 fulfilled with the equivalent Wurth WR-MPC4 4.2 mm housing.",
-    "uhf_pl259: no login-free STEP found. Radiall makes UHF (R155.003/005.000) but publishes no CAD for the series (S3 has only the datasheet PDF); Telegaertner (J01040 series), TME, Keystone, Farnell/CPC, L-com, Pasternack and Amphenol RF all block automated access (403) or gate CAD behind login; Adam Tech UHF (RF9-01-D-01-50) has datasheet only, no 3D model.",
-    "triax_update_2026-07: still no login-free STEP. Radiall BNC-TRX R266 parts (R266.010/260/403.000) have no STEP on the radiall-files S3 bucket; Intelliconnect triax (TRB/TRT, e.g. 0131-P1NN-417-100N) product pages offer PDF datasheets only; Trompeter/Cinch and Pomona remain banned portals; LEMO/Fischer gated.",
-    "ieee1394_firewire_6pin: not obtained. EDAC 693 series delisted from edac.net (obsolete); Molex host unreachable; Keystone (keyelco.com) and L-com block automated access; Assmann A-IEE-DIP 3D link redirects to TraceParts (banned); Adam Tech has no 1394 line; Kycon site has broken TLS chain and no confirmed 1394 series."
-  ],
-  "bnc_male_plug": {
-    "file": "radiall_R141082161_BNC_male_straight_crimp_plug.step",
-    "part": "Radiall R141.082.161 (BNC straight male plug, crimp type, 50 ohm, RG58/cable 5)",
-    "source": "https://radiall-files.s3.amazonaws.com/step/coaxialconnectors/R141.082.161F.STEP",
-    "page": "https://www.radiall.com/bnc-straight-plug-crimp-type-cable-5-50-s-r141082161.html"
-  },
-  "n_male_plug": {
-    "file": "radiall_R161082000_N_male_straight_crimp_plug.step",
-    "part": "Radiall R161.082.000 (N straight plug, full crimp type, cable 5/50 S, 50 ohm)",
-    "source": "https://radiall-files.s3.amazonaws.com/step/coaxialconnectors/R161.082.000F.STEP",
-    "page": "https://www.radiall.com/n-straight-plug-full-crimp-type-cable-5-50-s-r161082000.html"
-  },
-  "tnc_male_plug": {
-    "file": "radiall_R143082161_TNC_male_straight_crimp_plug.step",
-    "part": "Radiall R143.082.161 (TNC straight plug, crimp type, cable 5/50 S, 50 ohm)",
-    "source": "https://radiall-files.s3.amazonaws.com/step/coaxialconnectors/R143.082.161D.STEP",
-    "page": "https://www.radiall.com/tnc-straight-plug-crimp-type-cable-5-50-s-r143082161.html"
-  },
-  "din716_male_plug": {
-    "file": "radiall_R185077000_716_DIN_male_straight_crimp_plug.step",
-    "part": "Radiall R185.077.000 (7/16 DIN straight male plug, crimp type, cable 11/50 D)",
-    "source": "https://radiall-files.s3.amazonaws.com/step/coaxialconnectors/R185.077.000E.STEP",
-    "page": "https://www.radiall.com/7-16-straight-plug-crimp-type-cable-11-50-d.html"
-  },
-  "smp_male": {
-    "file": "radiall_R222426020_SMP_male_straight_receptacle_full_detent.step",
-    "part": "Radiall R222.426.020 (SMP straight male receptacle, solder legs, full detent, board mount)",
-    "source": "https://radiall-files.s3.amazonaws.com/step/coaxialconnectors/R222.426.020B.STEP",
-    "page": "https://www.radiall.com/smp-straight-male-receptacle-solder-legs-full-detent-r222426020.html"
-  },
-  "mhv_plug": {
-    "file": "radiall_R316011000_MHV_BNC-HT_male_straight_clamp_plug.step",
-    "part": "Radiall R316.011.000 (BNC HT-MHV straight plug, clamp type, cable 6/75 - MHV high-voltage cable plug, single connector)",
-    "source": "https://radiall-files.s3.amazonaws.com/step/coaxialconnectors/R316.011.000V.STEP",
-    "page": "https://www.radiall.com/bnc-ht-mhv-straight-plug-clamp-type-cable-6-75-r316011000.html"
-  },
-  "shv_cable_plug": {
-    "file": "radiall_R317072000_SHV_cable_plug_crimp.step",
-    "part": "Radiall R317.072.000 (SHV straight cable plug, crimp type, cable 5/50S; single connector)",
-    "source": "https://radiall-files.s3.amazonaws.com/step/coaxialconnectors/R317.072.000%20J.STEP",
-    "page": "https://www.radiall.com/shv-straight-female-crimp-type-cable-5-50s-r317072000.html"
-  },
-  "shv_panel_jack": {
-    "file": "radiall_R317405000_SHV_panel_jack_square_flange.step",
-    "part": "Radiall R317.405.000 (SHV straight male square-flange panel receptacle/jack)",
-    "source": "https://radiall-files.s3.amazonaws.com/step/coaxialconnectors/R317.405.000.STEP",
-    "page": "https://www.radiall.com/shv-straight-male-square-flange-receptacle-r317405000.html"
-  },
-  "rj45_male_plug": {
-    "file": "adamtech_mtp-88_RJ45_8P8C_male_plug.step",
-    "part": "Adam Tech MTP-88 (8P8C RJ45 modular cable plug, male)",
-    "source": "https://app.adam-tech.com/products/download/model/195302/mtp-88-model.step",
-    "page": "https://app.adam-tech.com/products/index/category:3095"
-  },
-  "rj11_male_plug": {
-    "file": "adamtech_mtp-64-x_RJ11_6P4C_male_plug.step",
-    "part": "Adam Tech MTP-64-X (6P4C RJ11 modular cable plug, male)",
-    "source": "https://app.adam-tech.com/products/download/model/195305/mtp-64-x-model.step",
-    "page": "https://app.adam-tech.com/products/index/category:3095"
-  },
-  "fc_fiber": {
-    "file": "cliff_cp30219m_FC_feedthrough_coupler.stp",
-    "part": "CLIFF Electronics CP30219M (FC fibre-optic feedthrough coupler/adapter in XLR shell, FC/PC & FC/APC)",
-    "source": "https://www.cliffuk.co.uk/products/feedthrough/metal/CP30219M.stp",
-    "page": "https://www.cliffuk.co.uk/products/feedthrough/metal/index.htm"
-  },
-  "f_type_male_plug": {
-    "file": "bkl_0403319_F_type_male_twist_on_plug.step",
-    "part": "BKL Electronic 0403319 (F-type twist-on male plug for 7.5 mm cable)",
-    "source": "https://static.bkl-electronic.de/3d-step/0403319-3d.step",
-    "page": "https://www.bkl-electronic.de/en/product/0403319"
-  }
+ "anderson_powerpole": {
+  "file": "anderson_pp15-45.stp",
+  "page": "https://www.andersonpower.com/us/en/category/product.html/powerpoler-15-45-standard-housings-black.html",
+  "part": "Anderson Power Products PP15-45 Powerpole housing (1327 family)",
+  "source": "https://p1.aprimocdn.net/idealindustries/049139ff-693d-4b33-82ec-b3f00073ea2b/ap-web_product-assets_default_step-files_PP-15-45-Std-02-08-STEP_Original%20file.zip"
+ },
+ "bnc_male_plug": {
+  "file": "radiall_R141082161_BNC_male_straight_crimp_plug.step",
+  "page": "https://www.radiall.com/bnc-straight-plug-crimp-type-cable-5-50-s-r141082161.html",
+  "part": "Radiall R141.082.161 (BNC straight male plug, crimp type, 50 ohm, RG58/cable 5)",
+  "source": "https://radiall-files.s3.amazonaws.com/step/coaxialconnectors/R141.082.161F.STEP"
+ },
+ "din716_male_plug": {
+  "file": "radiall_R185077000_716_DIN_male_straight_crimp_plug.step",
+  "page": "https://www.radiall.com/7-16-straight-plug-crimp-type-cable-11-50-d.html",
+  "part": "Radiall R185.077.000 (7/16 DIN straight male plug, crimp type, cable 11/50 D)",
+  "source": "https://radiall-files.s3.amazonaws.com/step/coaxialconnectors/R185.077.000E.STEP"
+ },
+ "displayport": {
+  "file": "adamtech_dpc-f-s-ra-smt-bl.step",
+  "page": "https://app.adam-tech.com/products/index/category:3101",
+  "part": "Adam Tech DPC-F-S-RA-SMT-BL (DisplayPort receptacle, right-angle SMT)",
+  "source": "https://app.adam-tech.com/products/download/model/203587/dpc-f-s-ra-smt-bl-model.step"
+ },
+ "f_type_male_plug": {
+  "file": "bkl_0403319_F_type_male_twist_on_plug.step",
+  "page": "https://www.bkl-electronic.de/en/product/0403319",
+  "part": "BKL Electronic 0403319 (F-type twist-on male plug for 7.5 mm cable)",
+  "source": "https://static.bkl-electronic.de/3d-step/0403319-3d.step"
+ },
+ "fc_fiber": {
+  "file": "cliff_cp30219m_FC_feedthrough_coupler.stp",
+  "page": "https://www.cliffuk.co.uk/products/feedthrough/metal/index.htm",
+  "part": "CLIFF Electronics CP30219M (FC fibre-optic feedthrough coupler/adapter in XLR shell, FC/PC & FC/APC)",
+  "source": "https://www.cliffuk.co.uk/products/feedthrough/metal/CP30219M.stp"
+ },
+ "fiber_lc_duplex": {
+  "file": "neutrik_no2-4fdw-a.stp",
+  "page": "https://www.neutrik.com/en/product/no2-4fdw-a",
+  "part": "Neutrik NO2-4FDW-A (opticalCON DUO chassis connector with LC-duplex feedthrough)",
+  "source": "https://www.neutrik.com/media/12624/download/3D%20Ansicht%20NO2-4FDW-A.stp?v=2"
+ },
+ "gpib_centronics24": {
+  "file": "norcomp_111-024-113L001.step",
+  "page": "https://www.norcomp.net/series/111-series",
+  "part": "NorComp 111-024-113L001 (111 series 24-position micro-ribbon / IEEE-488 style, male, PCB dip solder)",
+  "source": "https://content.norcomp.net/3d-drawings/step/111Series/111-024-113L001.STEP.zip"
+ },
+ "hdmi_mini": {
+  "file": "adamtech_mchdmi-s-ra-1-smt.step",
+  "page": "https://app.adam-tech.com/products/index/category:3103",
+  "part": "Adam Tech MCHDMI-S-RA-1-SMT (HDMI Mini Type C receptacle, right-angle SMT)",
+  "source": "https://app.adam-tech.com/products/download/model/203663/mchdmi-s-ra-1-smt-model.step"
+ },
+ "iec_c20_inlet": {
+  "file": "qualtek_744w-00-01.step",
+  "page": "https://www.qualtekusa.com/product/744w-00-01/",
+  "part": "Qualtek 744W-00/01 (IEC 60320 C20 screw-mount AC power inlet)",
+  "source": "https://qualtekusa.com/wp-content/uploads/3d/744w0001.STEP"
+ },
+ "m12_female": {
+  "file": "wurth_643160100604.stp",
+  "page": "https://www.we-online.com/en/components/products/WR-CIRCM12-SCREW-MATING-PANEL-FEMALE-METAL",
+  "part": "Wurth Elektronik 643160100604 (WR-CIRC M12 screw-mating panel, female, metal shell, 4-pin)",
+  "source": "https://www.we-online.com/components/products/download/643160100604%20(rev1).stp"
+ },
+ "m12_male": {
+  "file": "wurth_643150100604.stp",
+  "page": "https://www.we-online.com/en/components/products/CIRCULAR-CONNECTORS-M12-MALE-METAL-SHELL",
+  "part": "Wurth Elektronik 643150100604 (WR-CIRC M12 screw-mating panel, male, metal shell, 4-pin)",
+  "source": "https://www.we-online.com/components/products/download/643150100604%20(rev1).stp"
+ },
+ "mhv": {
+  "file": "accuglass_110177_mhv.stp",
+  "page": "https://www.accuglassproducts.com/coaxial/mhv-coaxial/floating-iso-feedthroughs/mhv-fs-k40",
+  "part": "Accu-Glass Products MHV-FS-K40 (MHV floating-shield coax feedthrough, NW40 KF flange; drawing 110177)",
+  "source": "https://api.swarm.accuglassproducts.com/sites/default/files/models/step/110177_2.zip"
+ },
+ "mhv_plug": {
+  "file": "radiall_R316011000_MHV_BNC-HT_male_straight_clamp_plug.step",
+  "page": "https://www.radiall.com/bnc-ht-mhv-straight-plug-clamp-type-cable-6-75-r316011000.html",
+  "part": "Radiall R316.011.000 (BNC HT-MHV straight plug, clamp type, cable 6/75 - MHV high-voltage cable plug, single connector)",
+  "source": "https://radiall-files.s3.amazonaws.com/step/coaxialconnectors/R316.011.000V.STEP"
+ },
+ "minifit_jr_equiv": {
+  "file": "wurth_649004113322.stp",
+  "page": "https://www.we-online.com/en/components/products/WTB_WR_MPC4_DUAL_RECETACLE_PLUG_DUAL_ROW",
+  "part": "Wurth Elektronik 649004113322 (WR-MPC4 4.20 mm dual-row female receptacle housing; Molex Mini-Fit Jr equivalent)",
+  "source": "https://www.we-online.com/components/products/download/649004113322%20(rev1).stp"
+ },
+ "misses": [
+  "triax: no login-free manufacturer STEP found. Trompeter/Cinch (Bel Fuse) CAD library is a SnapMagic embed (banned portal); Pomona triax adapters offer only PDF datasheets (their 3D models live on 3DContentCentral, banned); LEMO/Fischer CAD requires CADENAS PARTcommunity registration; Accu-Glass carries triax cable but no triax connector STEP.",
+  "minisas_hd_oculink: not obtained. Molex part-detail pages ('not formally published') expose no CAD; TE.com and Amphenol-CS block automated access (403) and TE DocumentDelivery CVM guess returned 500; Amphenol RF/CS 3D models are behind the MyARF login; no alternative vendor with direct STEP found.",
+  "note_amphenolrf: Amphenol RF (N/TNC/SMB originally requested from them) gates all 3D models behind MyARF account login (asset URLs 403 + redirect to login); items 6-8 were fulfilled from Wurth Elektronik instead.",
+  "note_schurter: Schurter IEC C20 CAD is served via an embedded CADENAS iframe (registration-gated); item 14 fulfilled from Qualtek instead.",
+  "note_molex_minifit: Molex 'Download 3D Model' unavailable without login for 39281043/0039012040; item 21 fulfilled with the equivalent Wurth WR-MPC4 4.2 mm housing.",
+  "uhf_pl259: no login-free STEP found. Radiall makes UHF (R155.003/005.000) but publishes no CAD for the series (S3 has only the datasheet PDF); Telegaertner (J01040 series), TME, Keystone, Farnell/CPC, L-com, Pasternack and Amphenol RF all block automated access (403) or gate CAD behind login; Adam Tech UHF (RF9-01-D-01-50) has datasheet only, no 3D model.",
+  "triax_update_2026-07: still no login-free STEP. Radiall BNC-TRX R266 parts (R266.010/260/403.000) have no STEP on the radiall-files S3 bucket; Intelliconnect triax (TRB/TRT, e.g. 0131-P1NN-417-100N) product pages offer PDF datasheets only; Trompeter/Cinch and Pomona remain banned portals; LEMO/Fischer gated.",
+  "ieee1394_firewire_6pin: not obtained. EDAC 693 series delisted from edac.net (obsolete); Molex host unreachable; Keystone (keyelco.com) and L-com block automated access; Assmann A-IEE-DIP 3D link redirects to TraceParts (banned); Adam Tech has no 1394 line; Kycon site has broken TLS chain and no confirmed 1394 series.",
+  "usb_b_male_plug, usb_micro_male_plug, f_type_male_plug (BKL): static.bkl-electronic.de blocked by this session egress policy (worked in a prior session on this same task) - USB-B and USB Micro-B cards show jack only; F-type card reverted to parametric p_f_type."
+ ],
+ "mtp12_ruggedized": {
+  "file": "neutrik_no12-a_opticalCON_MTP12_cable_connector.stp",
+  "page": "https://www.neutrik.com",
+  "part": "Neutrik opticalCON MTP 12 (ruggedized MTP cable connector) - downloaded, not currently used on poster",
+  "source": "https://www.neutrik.com/media/17162/download/3D%20Ansicht%20NO12_X-A%20STANDARD.stp?v=1"
+ },
+ "mtp_mpo_feedthrough": {
+  "file": "cliff_cp30245mb_MTP_MPO_feedthrough.stp",
+  "page": "https://www.cliffuk.co.uk",
+  "part": "CLIFF CP30245MB (US Conec MTP/MPO feedthrough, XLR shell) - downloaded, not currently used on poster",
+  "source": "https://www.cliffuk.co.uk/products/feedthrough/metalblack/CP30245MB.stp"
+ },
+ "n_jack": {
+  "file": "wurth_60412042241503.stp",
+  "page": "https://www.we-online.com/en/components/products/em/connectors/coax/coax_n_type_connectors",
+  "part": "Wurth Elektronik 60412042241503 (WR-NTYPE N-type straight PCB jack)",
+  "source": "https://www.we-online.com/components/products/download/60412042241503%20(rev1).stp"
+ },
+ "n_male_plug": {
+  "file": "radiall_R161082000_N_male_straight_crimp_plug.step",
+  "page": "https://www.radiall.com/n-straight-plug-full-crimp-type-cable-5-50-s-r161082000.html",
+  "part": "Radiall R161.082.000 (N straight plug, full crimp type, cable 5/50 S, 50 ohm)",
+  "source": "https://radiall-files.s3.amazonaws.com/step/coaxialconnectors/R161.082.000F.STEP"
+ },
+ "qsfp_cage": {
+  "file": "adamtech_qsfp1-dd-emi-hsk-lp-s3.step",
+  "page": "https://app.adam-tech.com/products/index/category:3088",
+  "part": "Adam Tech QSFP1-DD-EMI-HSK-LP-S3 (QSFP-DD 1x1 cage with EMI fingers, heatsink, light pipe)",
+  "source": "https://app.adam-tech.com/products/download/model/244310/qsfp1-dd-emi-hsk-lp-s3-model.step"
+ },
+ "rca_jack": {
+  "file": "samesky_rcj-041.step",
+  "page": "https://www.sameskydevices.com/product/interconnect/connectors/rca-connectors/rcj-041",
+  "part": "Same Sky (formerly CUI Devices) RCJ-041 (RCA/phono jack, black, right angle)",
+  "source": "https://3dcadfiles.3dexchange.net/step_ap214/205/7827259/Same_Sky_RCJ-041.zip"
+ },
+ "rj11_jack": {
+  "file": "wurth_615004138421.stp",
+  "page": "https://www.we-online.com/en/components/products/?sq=615004138421",
+  "part": "Wurth Elektronik 615004138421 (WR-MJ 6P4C modular jack)",
+  "source": "https://www.we-online.com/components/products/download/615004138421%20(rev1).stp"
+ },
+ "rj11_male_plug": {
+  "file": "adamtech_mtp-64-x_RJ11_6P4C_male_plug.step",
+  "page": "https://app.adam-tech.com/products/index/category:3095",
+  "part": "Adam Tech MTP-64-X (6P4C RJ11 modular cable plug, male)",
+  "source": "https://app.adam-tech.com/products/download/model/195305/mtp-64-x-model.step"
+ },
+ "rj45_male_plug": {
+  "file": "adamtech_mtp-88_RJ45_8P8C_male_plug.step",
+  "page": "https://app.adam-tech.com/products/index/category:3095",
+  "part": "Adam Tech MTP-88 (8P8C RJ45 modular cable plug, male)",
+  "source": "https://app.adam-tech.com/products/download/model/195302/mtp-88-model.step"
+ },
+ "sfp_cage": {
+  "file": "adamtech_sfc-1-emi.step",
+  "page": "https://app.adam-tech.com/products/index/category:3087",
+  "part": "Adam Tech SFC-1-EMI (single-port SFP cage with EMI springs)",
+  "source": "https://app.adam-tech.com/products/download/model/193010/sfc-1-emi-model.step"
+ },
+ "shv": {
+  "file": "accuglass_112441_shv5.stp",
+  "page": "https://www.accuglassproducts.com/shv5-gs4-k50",
+  "part": "Accu-Glass Products SHV5-GS4-K50 (4x SHV-5 grounded-shield coax feedthrough, NW50 KF flange; drawing 112441)",
+  "source": "https://api.swarm.accuglassproducts.com/sites/default/files/download/step/112441.zip"
+ },
+ "shv_cable_plug": {
+  "file": "radiall_R317072000_SHV_cable_plug_crimp.step",
+  "page": "https://www.radiall.com/shv-straight-female-crimp-type-cable-5-50s-r317072000.html",
+  "part": "Radiall R317.072.000 (SHV straight cable plug, crimp type, cable 5/50S; single connector)",
+  "source": "https://radiall-files.s3.amazonaws.com/step/coaxialconnectors/R317.072.000%20J.STEP"
+ },
+ "shv_panel_jack": {
+  "file": "radiall_R317405000_SHV_panel_jack_square_flange.step",
+  "page": "https://www.radiall.com/shv-straight-male-square-flange-receptacle-r317405000.html",
+  "part": "Radiall R317.405.000 (SHV straight male square-flange panel receptacle/jack)",
+  "source": "https://radiall-files.s3.amazonaws.com/step/coaxialconnectors/R317.405.000.STEP"
+ },
+ "sma_female_jack": {
+  "file": "radiall_R125403000_SMA_female_square_flange_jack_receptacle.step",
+  "page": "https://www.radiall.com",
+  "part": "Radiall R125.403.000 (SMA square-flange jack receptacle, solder pot)",
+  "source": "https://radiall-files.s3.amazonaws.com/step/coaxialconnectors/R125.403.000E.STEP"
+ },
+ "sma_male_plug": {
+  "file": "radiall_R125069000_SMA_male_straight_crimp_plug.step",
+  "page": "https://www.radiall.com",
+  "part": "Radiall R125.069.000 (SMA straight male crimp plug, cable 2/50 S)",
+  "source": "https://radiall-files.s3.amazonaws.com/step/coaxialconnectors/R125.069.000B.STEP"
+ },
+ "smb_jack": {
+  "file": "wurth_61611002121501.stp",
+  "page": "https://www.we-online.com/en/components/products/em/connectors/coax/coax_smb_connectors",
+  "part": "Wurth Elektronik 61611002121501 (WR-SMB SMB PCB jack, THT)",
+  "source": "https://www.we-online.com/components/products/download/61611002121501%20(rev1).stp"
+ },
+ "smp_male": {
+  "file": "radiall_R222426020_SMP_male_straight_receptacle_full_detent.step",
+  "page": "https://www.radiall.com/smp-straight-male-receptacle-solder-legs-full-detent-r222426020.html",
+  "part": "Radiall R222.426.020 (SMP straight male receptacle, solder legs, full detent, board mount)",
+  "source": "https://radiall-files.s3.amazonaws.com/step/coaxialconnectors/R222.426.020B.STEP"
+ },
+ "tnc_jack": {
+  "file": "wurth_67012002221502.stp",
+  "page": "https://www.we-online.com/en/components/products/em/connectors/coax/coaxial_tnc_connectors",
+  "part": "Wurth Elektronik 67012002221502 (WR-TNC TNC straight PCB jack)",
+  "source": "https://www.we-online.com/components/products/download/67012002221502%20(rev1).stp"
+ },
+ "tnc_male_plug": {
+  "file": "radiall_R143082161_TNC_male_straight_crimp_plug.step",
+  "page": "https://www.radiall.com/tnc-straight-plug-crimp-type-cable-5-50-s-r143082161.html",
+  "part": "Radiall R143.082.161 (TNC straight plug, crimp type, cable 5/50 S, 50 ohm)",
+  "source": "https://radiall-files.s3.amazonaws.com/step/coaxialconnectors/R143.082.161D.STEP"
+ },
+ "toslink_receptacle": {
+  "file": "cliff_fcr684205r.stp",
+  "page": "https://www.cliffuk.co.uk/products/optical/opticaljacks.htm",
+  "part": "CLIFF Electronics FCR684205R (TOSLINK optical receiver jack)",
+  "source": "https://www.cliffuk.co.uk/products/optical/FCR684205R.stp"
+ },
+ "usb_a_male_plug": {
+  "file": "adamtech_usb-ap3-s_USB_A_male_cable_plug.step",
+  "page": "https://app.adam-tech.com",
+  "part": "Adam Tech USB-AP3-S (USB-A male cable-solder plug)",
+  "source": "https://app.adam-tech.com/products/download/model/195868/usb-ap3-s-model.step"
+ },
+ "usb_a_male_plug_bkl_blocked": {
+  "file": "bkl_10120098 (unreachable this session)",
+  "page": "https://www.bkl-electronic.de",
+  "part": "BKL 10120098 USB-A male solder plug - static.bkl-electronic.de blocked by session egress policy; substituted with Adam Tech USB-AP3-S",
+  "source": "https://static.bkl-electronic.de/3d-step/10120098-3d.step"
+ },
+ "usb_b": {
+  "file": "wurth_61400416121.stp",
+  "page": "https://www.we-online.com/en/components/products/?sq=61400416121",
+  "part": "Wurth Elektronik 61400416121 (WR-COM USB 2.0 Type B receptacle)",
+  "source": "https://www.we-online.com/components/products/download/61400416121%20(rev1).stp"
+ },
+ "usb_c_male_plug": {
+  "file": "adamtech_usb-c31-plug-h_USB_C_male_plug.step",
+  "page": "https://app.adam-tech.com",
+  "part": "Adam Tech USB-C31-PLUG-H-SMT-DC-TR (USB-C 24-pin male plug)",
+  "source": "https://app.adam-tech.com/products/download/model/195326/usb-c31-plug-h-smt-dc-tr-model.step"
+ },
+ "usb_mini_male_plug_asm": {
+  "file": "qualtek_3021003-03_USB_A_to_mini_B_male_cable_plugs.stp",
+  "page": "https://www.qualtekusa.com",
+  "part": "Qualtek 3021003-03 USB-A-to-Mini-B cable assembly (mini-B plug mesh extracted as v_qualtek_usbmini_plug)",
+  "source": "https://qualtekusa.com/wp-content/uploads/3d/usb%20a-minib.stp"
+ },
+ "xlr_male": {
+  "file": "neutrik_nc3mxx.stp",
+  "page": "https://www.neutrik.com/en/product/nc3mxx",
+  "part": "Neutrik NC3MXX (3-pole male XLR cable connector)",
+  "source": "https://www.neutrik.com/media/13485/download/NC3MXX.stp?v=4"
+ }
 }
