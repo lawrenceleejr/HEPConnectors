@@ -17,6 +17,7 @@ COLS = {
     'P_blue':   (0.05, 0.16, 0.55, 1),   # SM connector body blue
     'P_aqua':   (0.10, 0.55, 0.60, 1),   # 10G aqua boot
     'P_beige':  (0.82, 0.77, 0.62, 1),
+    'P_gray':   (0.45, 0.45, 0.46, 1),
     'P_black':  (0.035, 0.035, 0.04, 1),
     'P_dark':   (0.10, 0.10, 0.11, 1),
     'P_green':  (0.08, 0.42, 0.18, 1),   # APC green
@@ -137,18 +138,33 @@ def m_fc():
     boot(2.6, 1.3, 12, -15, 'P_black')
     export('p_fc')
 
-def m_mtp():
+def m_mtp(colour='P_black', pins=True, angled=False, name='p_mtp'):
     fresh()
-    box(12.4, 18, 6.4, (0, -9, 3.2), 'P_black')                  # outer housing
-    box(10.2, 5, 4.6, (0, 0.5, 3.2), 'P_ivory')                  # MT ferrule
+    # rear push-pull slider sleeve with grip ridges + top key
+    box(12.4, 10.5, 6.6, (0, -14.5, 3.3), colour)
+    box(2.6, 6.5, 0.9, (0, -14.5, 7.0), colour)                  # key hump
+    for k in range(3):                                           # grip ridges
+        yk = -11.8 - k*2.4
+        box(0.5, 1.2, 6.8, (-6.35, yk, 3.3), colour)
+        box(0.5, 1.2, 6.8, ( 6.35, yk, 3.3), colour)
+    # inner body ahead of slider
+    box(10.6, 9.5, 5.6, (0, -4.8, 2.8), colour)
+    box(9.4, 1.2, 4.8, (0, -0.4, 2.8), 'P_white')                # ferrule spring flange
+    # MT ferrule
+    if angled:
+        box(6.9, 4.2, 2.9, (0, 1.9, 2.8), 'P_ivory', rot=(0, 0, math.radians(8)))
+    else:
+        box(6.9, 4.2, 2.9, (0, 1.9, 2.8), 'P_ivory')
     for i in range(12):                                          # fiber row
-        x = -3.44 + i * 0.625
-        cyl(0.12, 0.4, (x, 3.05, 3.2), 'C_ferrule')
-    cyl(0.35, 4.5, (-5.3, 1.2, 3.2), 'M_steel')                  # guide pins
-    cyl(0.35, 4.5, ( 5.3, 1.2, 3.2), 'M_steel')
-    box(9, 6, 5.2, (0, -21, 3.2), 'P_black')
-    boot(3.0, 1.6, 12, -24, 'P_black')
-    export('p_mtp')
+        x = -1.72 + i * 0.3125
+        cyl(0.09, 0.5, (x, 3.9, 2.8), 'C_ferrule')
+    if pins:
+        cyl(0.28, 3.4, (-2.65, 2.6, 2.8), 'M_steel')             # guide pins
+        cyl(0.28, 3.4, ( 2.65, 2.6, 2.8), 'M_steel')
+    # crimp body + boot
+    box(8.4, 5.5, 5.4, (0, -22.2, 2.7), colour)
+    boot(2.6, 1.4, 11, -25, 'P_black' if colour != 'P_black' else 'P_gray')
+    export(name)
 
 def m_mu():
     fresh()
@@ -550,28 +566,12 @@ def m_din716():
     export('p_din716')
 
 # ================= MTP variants =================
-def mtp_body(colour, angled=False, pins=True):
-    box(12.4, 18, 6.4, (0, -9, 3.2), colour)
-    if angled:
-        box(10.2, 5, 4.6, (0, 0.5, 3.2), 'P_ivory', rot=(0, 0, math.radians(8)))
-    else:
-        box(10.2, 5, 4.6, (0, 0.5, 3.2), 'P_ivory')
-    for i in range(12):
-        x = -3.44 + i * 0.625
-        cyl(0.12, 0.4, (x, 3.05, 3.2), 'C_ferrule')
-    if pins:
-        cyl(0.35, 4.5, (-5.3, 1.2, 3.2), 'M_steel')
-        cyl(0.35, 4.5, ( 5.3, 1.2, 3.2), 'M_steel')
-    box(9, 6, 5.2, (0, -21, 3.2), colour)
-    boot(3.0, 1.6, 12, -24, colour if colour != 'P_ivory' else 'P_black')
-
 def m_mtp_f():
-    fresh(); mtp_body('P_black', pins=False); export('p_mtp_f')
+    m_mtp('P_beige', pins=False, name='p_mtp_f')
 
 def m_mtp_apc():
-    fresh(); mtp_body('P_green', angled=True, pins=True); export('p_mtp_apc')
+    m_mtp('P_green', pins=True, angled=True, name='p_mtp_apc')
 
-# ================= experiment-specific =================
 def m_vtrx():
     fresh()
     # VTRx+ optical module: small PCB module with MT-ferrule fibre pigtail
@@ -765,7 +765,20 @@ def m_rj45_plug():
     boot(3.4, 2.2, 10, -25, 'P_dark')
     export('p_rj45_plug')
 
-ALL = [m_rj45_plug, m_dip, m_button, m_lc, m_lc_duplex, m_sc, m_st, m_fc, m_mtp, m_mu, m_e2000,
+
+def m_jack35_plug():
+    fresh()
+    # 3.5 mm TRS plug: tip-ring-sleeve with black separators, barrel + boot
+    cyl(1.75, 3.2, (0, 3.0, 1.75), 'M_nickel', r2=0.9)           # rounded tip
+    cyl(1.75, 0.7, (0, 1.35, 1.75), 'P_black')
+    cyl(1.75, 2.2, (0, 0.2, 1.75), 'M_nickel')                   # ring
+    cyl(1.75, 0.7, (0, -1.25, 1.75), 'P_black')
+    cyl(1.75, 8.0, (0, -5.3, 1.75), 'M_nickel')                  # sleeve
+    cyl(3.6, 12.0, (0, -15.5, 1.75), 'M_nickel', verts=24)       # knurled barrel
+    boot(2.6, 1.6, 12, -21.5, 'P_black')
+    export('p_jack35_plug')
+
+ALL = [m_jack35_plug, m_rj45_plug, m_dip, m_button, m_lc, m_lc_duplex, m_sc, m_st, m_fc, m_mtp, m_mu, m_e2000,
        m_splice, m_twinbnc,
        m_usb3_b, m_usb3_micro, m_firewire6, m_firewire9,
        m_sas, m_minisas_hd, m_m2, m_matenlok,

@@ -139,6 +139,11 @@ TINT = {
   'v_neutrik_lc_duplex': {'force': (0.06, 0.06, 0.065, 0.0, 0.4)},
   'v_bkl_f_plug': {'white': NICKEL},
   'v_cliff_fc': {'white': NICKEL},
+  'v_radiall_sma_plug': {'white': NICKEL},
+  'v_radiall_sma_jack': {'white': NICKEL},
+  'v_adamtech_usba3_plug': {'white': NICKEL},
+  'v_adamtech_usbc_plug': {'white': NICKEL},
+  'v_qualtek_usbmini_plug': {'white': NICKEL},
 }
 
 def apply_tint(name):
